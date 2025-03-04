@@ -11,8 +11,15 @@ targets:
     sources:
       - path: "App"
     dependencies:
+    # Kits
+      - target: CommonKit
+      - target: DependencyManagerKit
+      - target: NetworkManagerKit
+    # Modules
       - target: ProductList
       - target: ProductDetail
+    
+    # 3rd parties
       - package: UILab
       - package: NLab
     settings:

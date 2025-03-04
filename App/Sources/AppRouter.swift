@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import DependencyManagerKit
 
 final class AppRouter {
+    @Dependency var productListModule: ProductListModuleInterface
+    
     let window: UIWindow?
     
     init(window: UIWindow?) {
@@ -15,7 +18,7 @@ final class AppRouter {
     }
     
     @MainActor func initializeRootViewController() {
-        let productListViewController = ViewController()
+        let productListViewController = productListModule.productListViewController()
         let navigationController = UINavigationController(rootViewController: productListViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

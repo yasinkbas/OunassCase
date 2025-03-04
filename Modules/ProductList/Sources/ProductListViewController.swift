@@ -10,7 +10,7 @@ import UIKit
 public class ProductListViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .yellow
         title = "Product List"
     }
 }

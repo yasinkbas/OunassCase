@@ -14,5 +14,7 @@ final class AppContainer {
     init(window: UIWindow?) {
         self.window = window
         router = AppRouter(window: window)
+        
+        DependencyHandler().registerDependencies()
     }
 }
