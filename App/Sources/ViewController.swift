@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UILab
 import ProductDetail
 
 class ViewController: UIViewController {

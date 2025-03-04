@@ -13,17 +13,61 @@ targets:
     dependencies:
       - target: ProductList
       - target: ProductDetail
+      - package: UILab
+      - package: NLab
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.OunassCase
         SWIFT_VERSION: 6.0
         INFOPLIST_FILE: "App/Resources/Info.plist"
 
+# Kits
+  CommonKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Kits/CommonKit/
+        group: Kits/
+    dependencies:
+      - package: UILab
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.CommonKit
+        INFOPLIST_FILE: "Kits/CommonKit/Resources/Info.plist"
+
+  DependencyManagerKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Kits/DependencyManagerKit/
+        group: Kits/
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.DependencyManagerKit
+        INFOPLIST_FILE: "Kits/DependencyManagerKit/Resources/Info.plist"
+
+  NetworkManagerKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Kits/NetworkManagerKit/
+        group: Kits/
+    dependencies:
+      - package: NLab
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.NetworkManagerKit
+        INFOPLIST_FILE: "Kits/NetworkManagerKit/Resources/Info.plist"
+
+# Modules
   ProductList:
     type: framework
     platform: iOS
     sources: 
-      - path: "Modules/ProductList/"
+      - path: Modules/ProductList
+        group: Modules/
+    dependencies:
+      - package: UILab
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductList
@@ -33,8 +77,19 @@ targets:
     type: framework
     platform: iOS
     sources:
-      - path: "Modules/ProductDetail/"
+      - path: Modules/ProductDetail
+        group: Modules/
+    dependencies:
+      - package: UILab
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductDetail
         INFOPLIST_FILE: "Modules/ProductDetail/Resources/Info.plist"
+
+packages:
+  UILab:
+    url: "https://github.com/yasinkbas/UILab"
+    from: "0.3.4"
+  NLab:
+    url: "https://github.com/yasinkbas/NLab"
+    from: "1.3.0"
