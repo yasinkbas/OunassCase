@@ -1,0 +1,40 @@
+name: OunassCase
+options:
+  bundleIdPrefix: com.yasinkbas
+  deploymentTarget:
+    iOS: "15.0"
+
+targets:
+  OunassCase:
+    type: application
+    platform: iOS
+    sources:
+      - path: "App"
+    dependencies:
+      - target: ProductList
+      - target: ProductDetail
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.OunassCase
+        SWIFT_VERSION: 6.0
+        INFOPLIST_FILE: "App/Resources/Info.plist"
+
+  ProductList:
+    type: framework
+    platform: iOS
+    sources: 
+      - path: "Modules/ProductList/"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductList
+        INFOPLIST_FILE: "Modules/ProductList/Resources/Info.plist"
+
+  ProductDetail:
+    type: framework
+    platform: iOS
+    sources:
+      - path: "Modules/ProductDetail/"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductDetail
+        INFOPLIST_FILE: "Modules/ProductDetail/Resources/Info.plist"
