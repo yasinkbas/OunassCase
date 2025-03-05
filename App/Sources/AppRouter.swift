@@ -18,7 +18,7 @@ final class AppRouter {
     }
     
     @MainActor func initializeRootViewController() {
-        let productListViewController = productListModule.productListViewController()
+        let productListViewController = productListModule.productListViewController(usedNavigationController: nil)
         let navigationController = UINavigationController(rootViewController: productListViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

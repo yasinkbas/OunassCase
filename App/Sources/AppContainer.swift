@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NetworkManagerKit
 
 final class AppContainer {
     let router: AppRouter

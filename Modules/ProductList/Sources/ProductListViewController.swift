@@ -1,16 +1,30 @@
 //
 //  ProductListViewController.swift
-//  OunassCase
+//  ProductList
 //
-//  Created by Yasin Akbas on 4.03.2025.
+//  Created by Yasin Akbas on 5.03.2025.
 //
 
 import UIKit
 
-public class ProductListViewController: UIViewController {
-    public override func viewDidLoad() {
+protocol ProductListViewInterface: AnyObject {
+    func prepareUI()
+}
+
+class ProductListViewController: UIViewController {
+    var presenter: ProductListPresenterInterface!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        presenter.viewDidLoad()
+        view.backgroundColor = .purple
         title = "Product List"
+    }
+}
+
+// MARK: - ProductListViewInterface
+extension ProductListViewController: ProductListViewInterface { 
+    func prepareUI() { 
+    
     }
 }

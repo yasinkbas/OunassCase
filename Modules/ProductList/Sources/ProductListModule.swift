@@ -14,7 +14,7 @@ public class ProductListModule {
 
 // MARK: - ProductListModuleInterface
 extension ProductListModule: ProductListModuleInterface {
-    public func productListViewController() -> UIViewController {
-        ProductListViewController()
+    public func productListViewController(usedNavigationController navigationController: UINavigationController?) -> UIViewController {
+        ProductListRouter.createModule()
     }
 }

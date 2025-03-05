@@ -1,39 +1,44 @@
 name: OunassCase
 options:
   bundleIdPrefix: com.yasinkbas
+  generateEmptyDirectories: true
   deploymentTarget:
     iOS: "15.0"
 
+configs:
+  Dev: debug
+  Prod: release
+
 targets:
-  OunassCase:
+  Application:
     type: application
     platform: iOS
     sources:
-      - path: "App"
+      - path: App
     dependencies:
-    # Kits
+      - target: ProductList
+      - target: ProductDetail
       - target: CommonKit
       - target: DependencyManagerKit
       - target: NetworkManagerKit
-    # Modules
-      - target: ProductList
-      - target: ProductDetail
-    
-    # 3rd parties
-      - package: UILab
+
       - package: NLab
+      - package: UILab
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.OunassCase
-        SWIFT_VERSION: 6.0
-        INFOPLIST_FILE: "App/Resources/Info.plist"
+        CONFIGURATION_BUILD_DIR: $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+        BASE_URL: $(BASE_URL)
+    scheme:
+      configVariants:
+        dev: dev
+        prod: prod
 
 # Kits
   CommonKit:
     type: framework
     platform: iOS
     sources:
-      - path: Kits/CommonKit/
+      - path: Kits/CommonKit
         group: Kits/
     dependencies:
       - package: UILab
@@ -46,7 +51,7 @@ targets:
     type: framework
     platform: iOS
     sources:
-      - path: Kits/DependencyManagerKit/
+      - path: Kits/DependencyManagerKit
         group: Kits/
     settings:
       base:
@@ -57,7 +62,7 @@ targets:
     type: framework
     platform: iOS
     sources:
-      - path: Kits/NetworkManagerKit/
+      - path: Kits/NetworkManagerKit
         group: Kits/
     dependencies:
       - package: NLab
@@ -70,7 +75,7 @@ targets:
   ProductList:
     type: framework
     platform: iOS
-    sources: 
+    sources:
       - path: Modules/ProductList
         group: Modules/
     dependencies:
@@ -93,10 +98,11 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductDetail
         INFOPLIST_FILE: "Modules/ProductDetail/Resources/Info.plist"
 
+# 3rd parties
 packages:
-  UILab:
-    url: "https://github.com/yasinkbas/UILab"
-    from: "0.3.4"
   NLab:
     url: "https://github.com/yasinkbas/NLab"
     from: "1.3.0"
+  UILab:
+    url: "https://github.com/yasinkbas/UILab"
+    from: "0.3.4"
