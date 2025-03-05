@@ -10,10 +10,16 @@ import NLab
 
 public class NetworkClientHandler {
     private static var baseUrl: URL {
-        return URL(string: "https://www.ounass.ae/api")!
+        return URL(string: "https://www.ounass.ae")!
     }
     
     public static func client() -> NLClient {
         NLClient(baseURL: baseUrl, session: .shared)
+    }
+}
+
+public extension NLTaskPoint {
+    func injectSomething() -> Self {
+        addParameter(.init(name: "", value: "")) // TODO: think to implement
     }
 }

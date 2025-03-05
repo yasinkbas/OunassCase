@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import NetworkManagerKit
 
 protocol ProductListInteractorInterface: AnyObject {
-
+    func fetchProducts() async -> ProductListBaseAPIResponse<ProductListResponse>?
 }
 
 protocol ProductListInteractorOutput: AnyObject {
+    func handleRequestError(error: Error)
     
 }
 
@@ -21,5 +23,11 @@ final class ProductListInteractor {
 
 // MARK: - ProductListInteractorInterface
 extension ProductListInteractor: ProductListInteractorInterface { 
-
+    func fetchProducts() async -> ProductListBaseAPIResponse<ProductListResponse>? {
+        guard let output else { return nil }
+        return await ProductListEndpoint()
+            .getList()
+            .onError(output.handleRequestError(error:))
+            .startAsync()
+    }
 }

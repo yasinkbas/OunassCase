@@ -13,10 +13,13 @@ protocol ProductListViewInterface: AnyObject {
 
 class ProductListViewController: UIViewController {
     var presenter: ProductListPresenterInterface!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad()
+        Task {
+            await presenter.viewDidLoad()
+        }
         view.backgroundColor = .purple
         title = "Product List"
     }

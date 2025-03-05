@@ -27,7 +27,6 @@ targets:
     settings:
       base:
         CONFIGURATION_BUILD_DIR: $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-        BASE_URL: $(BASE_URL)
     scheme:
       configVariants:
         dev: dev
@@ -79,7 +78,9 @@ targets:
       - path: Modules/ProductList
         group: Modules/
     dependencies:
+      - target: NetworkManagerKit
       - package: UILab
+      - package: NLab
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductList
