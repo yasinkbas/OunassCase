@@ -79,6 +79,8 @@ targets:
         group: Modules/
     dependencies:
       - target: NetworkManagerKit
+      - target: CommonKit
+      - target: DependencyManagerKit
       - package: UILab
       - package: NLab
     settings:

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import DependencyManagerKit
+import CommonKit
 
 protocol ProductListRouterInterface: AnyObject {
     
@@ -22,7 +24,8 @@ final class ProductListRouter {
         let view = ProductListViewController()
         let interactor = ProductListInteractor()
         let router = ProductListRouter(with: navigationController)
-        let presenter = ProductListPresenter(view: view, router: router, interactor: interactor)
+        let deviceChecker: DeviceChecker = DependencyEngine.shared.read(for: DeviceCheckerInterface.self)
+        let presenter = ProductListPresenter(view: view, router: router, interactor: interactor, deviceChecker: deviceChecker)
         view.presenter = presenter
         interactor.output = presenter
         return view
