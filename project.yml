@@ -24,6 +24,7 @@ targets:
 
       - package: NLab
       - package: UILab
+      - package: SDWebImage
     settings:
       base:
         CONFIGURATION_BUILD_DIR: $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
@@ -83,6 +84,7 @@ targets:
       - target: DependencyManagerKit
       - package: UILab
       - package: NLab
+      - package: SDWebImage
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductList
@@ -109,3 +111,6 @@ packages:
   UILab:
     url: "https://github.com/yasinkbas/UILab"
     from: "0.3.4"
+  SDWebImage:
+    url: "https://github.com/SDWebImage/SDWebImage.git"
+    from: "5.21.0"

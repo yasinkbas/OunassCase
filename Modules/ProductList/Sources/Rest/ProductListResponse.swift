@@ -182,19 +182,19 @@ struct SortBy: Codable {
 struct StyleColor: Codable {
     let styleColorID, slug, designerCategoryName, thumbnail: String?
     let name: String?
-    let simpleType: SimpleType?
+    let simpleType: String?
     let parentSku: String?
-    let discounted: Discounted?
+    let discounted: String?
     let wishlistCount: Int?
     let url: String?
     let designerCategoryEnglishName, nameInEnglish, categoryURL, colorInEnglish: String?
     let productClassInEnglish: String?
-    let division: Division?
-    let group: Gender?
+    let division: String?
+    let group: String?
     let department: String?
     let styleColorClass, subClass: String?
-    let gender: Gender?
-    let season: Season?
+    let gender: String?
+    let season: String?
     let exclusive: Int?
     let isClearance, isPriority, isPromotion: Bool?
     let designerPlusSubClass, hoverImage: String?
@@ -217,23 +217,10 @@ struct StyleColor: Codable {
 // MARK: - Badge
 struct Badge: Codable {
     let id: Int?
-    let name: Name?
-    let backgroundColor, borderColor: BackgroundColor?
-    let fontColor, backgroundColorDarkMode, borderColorDarkMode: BackgroundColorDarkMode?
-    let fontColorDarkMode: BackgroundColor?
-}
-
-enum BackgroundColor: String, Codable {
-    case f2F2F2 = "#f2f2f2"
-}
-
-enum BackgroundColorDarkMode: String, Codable {
-    case the2C2C2E = "#2c2c2e"
-    case the2D2D2D = "#2d2d2d"
-}
-
-enum Name: String, Codable {
-    case badge = "badge"
+    let name: String?
+    let backgroundColor, borderColor: String?
+    let fontColor, backgroundColorDarkMode, borderColorDarkMode: String?
+    let fontColorDarkMode: String?
 }
 
 // MARK: - Color
@@ -244,31 +231,6 @@ struct Color: Codable {
         case styleColorID
         case url, hex, swatchImage
     }
-}
-
-enum Discounted: String, Codable {
-    case no = "no"
-}
-
-enum Division: String, Codable {
-    case fashion = "Fashion"
-}
-
-enum Gender: String, Codable {
-    case womens = "Womens"
-}
-
-enum Season: String, Codable {
-    case continuity = "Continuity"
-    case fw2025 = "FW 2025"
-    case ramadan2025 = "Ramadan 2025"
-    case ss2025 = "SS 2025"
-}
-
-enum SimpleType: String, Codable {
-    case colorAndSizeSimple = "colorAndSizeSimple"
-    case simpleWithoutSiblings = "simpleWithoutSiblings"
-    case sizeOnlySimple = "sizeOnlySimple"
 }
 
 // MARK: - Size

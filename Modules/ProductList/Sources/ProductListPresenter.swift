@@ -13,7 +13,7 @@ protocol ProductListPresenterInterface: AnyObject {
     func numberOfItemsInSection() -> Int
     func productCellArguments(for indexPath: IndexPath) -> ProductCellArguments
     func collectionViewDidSelectItem(indexPath: IndexPath)
-    func collectionViewWillDisplay(indexPath: IndexPath)
+    func collectionViewWillDisplay(indexPath: IndexPath) async
     func collectionViewSizeForItemAt(viewWidth: Double) -> (width: Double, height: Double)
 }
 
@@ -23,7 +23,6 @@ private extension ProductListPresenter {
         static let landscapeItemsPerRow: Double = 4
         static let horizontalPadding: Double = 16
         static let heightRatio: Double = 1.6
-        static let initialPageNumber: Int = 1
     }
 }
 
@@ -35,8 +34,7 @@ final class ProductListPresenter: @unchecked Sendable {
     
     private var productList: [StyleColor] = []
     private var pagination: Pagination?
-    private var isFetching = false
-    private var pageNumber: Int = 1
+    private var isFetching: Bool = false
     
     init(view: ProductListViewInterface,
          router: ProductListRouterInterface,
@@ -47,18 +45,27 @@ final class ProductListPresenter: @unchecked Sendable {
         self.interactor = interactor
         self.deviceChecker = deviceChecker
     }
+    
+    private func fetchProducts(for pageHref: String?) async {
+        var startIndex: Int = .zero
+        if let pageHref {
+            let components = URLComponents(string: pageHref)
+            startIndex = Int(components?.queryItems?.first(where: { $0.name == "fh_start_index" })?.value ?? "0") ?? .zero // TODO: think about moving into interactor
+        }
+        isFetching = true
+        let data = await interactor.fetchProducts(for: startIndex)
+        isFetching = false
+        pagination = data?.result?.pagination
+        productList.append(contentsOf: data?.result?.styleColors ?? [])
+    }
 }
 
 // MARK: - ProductListPresenterInterface
 extension ProductListPresenter: ProductListPresenterInterface {
     @MainActor func viewDidLoad() async {
         view?.prepareUI()
-        let data = await interactor.fetchProducts()
-        productList = data?.result?.styleColors ?? []
-        
-        DispatchQueue.main.async {
-            self.view?.reloadCollectionView()
-        }
+        await fetchProducts(for: nil)
+        view?.reloadCollectionView()
     }
     
     func numberOfItemsInSection() -> Int {
@@ -74,8 +81,12 @@ extension ProductListPresenter: ProductListPresenterInterface {
         // TODO: move detail
     }
     
-    func collectionViewWillDisplay(indexPath: IndexPath) {
-        // TODO: pagination
+    @MainActor func collectionViewWillDisplay(indexPath: IndexPath) async {
+        if let nextPageHref = pagination?.nextPage?.href,
+        indexPath.item == productList.count - 1 {
+            await fetchProducts(for: nextPageHref)
+            view?.reloadCollectionView()
+        }
     }
     
     func collectionViewSizeForItemAt(viewWidth: Double) -> (width: Double, height: Double) {
@@ -94,5 +105,6 @@ extension ProductListPresenter: ProductListPresenterInterface {
 extension ProductListPresenter: ProductListInteractorOutput {
     func handleRequestError(error: any Error) {
         print("--> error \(error)")
+        isFetching = false
     }
 }

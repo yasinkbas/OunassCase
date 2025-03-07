@@ -7,6 +7,7 @@
 
 import UIKit
 import UILab
+import SDWebImage
 
 private extension ProductCell {
     enum Constants {
@@ -75,22 +76,20 @@ final class ProductCell: UICollectionViewCell {
     }
 
     func configure(with arguments: ProductCellArguments) {
-        nameLabel.text = arguments.productName ?? "Unknown"
+        nameLabel.text = arguments.productName
         
         if let imageUrl = arguments.thumbnailImage, let url = URL(string: "https:\(imageUrl)") {
             loadImage(from: url)
-        } else {
-            imageView.image = UIImage(systemName: "defaultphoto")
         }
     }
 
     private func loadImage(from url: URL) {
-        DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
-                DispatchQueue.main.async {
-                    self.imageView.image = image
-                }
+        imageView.sd_setImage(with: url) { [weak self] image, error, _, _ in
+            guard let self else { return }
+            if let error {
+                print("--> error \(error)")
             }
+            self.imageView.image = image
         }
     }
 }

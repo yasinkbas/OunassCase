@@ -97,6 +97,8 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        presenter.collectionViewWillDisplay(indexPath: indexPath)
+        Task {
+            await presenter.collectionViewWillDisplay(indexPath: indexPath)
+        }
     }
 }

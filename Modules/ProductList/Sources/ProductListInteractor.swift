@@ -9,7 +9,7 @@ import Foundation
 import NetworkManagerKit
 
 protocol ProductListInteractorInterface: AnyObject {
-    func fetchProducts() async -> ProductListBaseAPIResponse<ProductListResponse>?
+    func fetchProducts(for startIndex: Int) async -> ProductListBaseAPIResponse<ProductListResponse>?
 }
 
 protocol ProductListInteractorOutput: AnyObject {
@@ -23,10 +23,11 @@ final class ProductListInteractor {
 
 // MARK: - ProductListInteractorInterface
 extension ProductListInteractor: ProductListInteractorInterface { 
-    func fetchProducts() async -> ProductListBaseAPIResponse<ProductListResponse>? {
+    func fetchProducts(for startIndex: Int) async -> ProductListBaseAPIResponse<ProductListResponse>? {
         guard let output else { return nil }
+        print("--> request started \(startIndex)")
         return await ProductListEndpoint()
-            .getList()
+            .getList(for: String(startIndex))
             .onError(output.handleRequestError(error:))
             .startAsync()
     }

@@ -13,18 +13,12 @@ final class ProductListEndpoint {
     
     init() { }
     
-    func getList() -> NLTaskDirector<ProductListBaseAPIResponse<ProductListResponse>, Empty> {
+
+    func getList(for startIndex: String?) -> NLTaskDirector<ProductListBaseAPIResponse<ProductListResponse>, Empty> {
         NLTaskPoint(client: client)
             .path("/api/v2/women/clothing")
+            .addParameter(.init(name: "fh_start_index", value: startIndex ?? "0"))
             .method(.get)
             .build().and.direct()
     }
-    
-    // TODO: pagination
-//    func getProduct(for page: String) -> NLTaskDirector<BaseAPIResponse<ProductListResponse>, Empty> {
-//        NLTaskPoint(client: client)
-//            .path("")
-//            .method(.get)
-//            .build().and.direct()
-//    }
 }
