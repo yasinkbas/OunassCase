@@ -30,9 +30,7 @@ struct ProductCellArguments {
     let thumbnailImage: String?
 }
 
-final class ProductCell: UICollectionViewCell {
-    static let reuseIdentifier = "ProductCell"
-    
+final class ProductCell: UICollectionViewCell {    
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit

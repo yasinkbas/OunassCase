@@ -38,7 +38,7 @@ final class ProductListViewController: UIViewController {
         layout.sectionInset = Constants.CollectionView.sectionInset
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(ProductCell.self, forCellWithReuseIdentifier: ProductCell.reuseIdentifier)
+        collectionView.register(cellType: ProductCell.self, bundle: .main)
         return collectionView
     }()
     
