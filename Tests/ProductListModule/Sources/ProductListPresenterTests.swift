@@ -72,7 +72,7 @@ final class ProductListPresenterTests: XCTestCase {
         // TODO: will be implemented later
     }
     
-    func test_collectionViewWillDisplay_PaginationNextPageHrefExist_DoesNotInvokeFetchProducts() async {
+    func test_collectionViewWillDisplay_PaginationNextPageHrefNotExist_DoesNotInvokeFetchProducts() async {
         XCTAssertEqual(interactor.invokedFetchProductsCount, 0)
         XCTAssertEqual(view.invokedReloadCollectionViewCount, 0)
         
@@ -117,6 +117,7 @@ final class ProductListPresenterTests: XCTestCase {
         await presenter.collectionViewWillDisplay(indexPath: .init(item: 47, section: 0))
         
         XCTAssertEqual(interactor.invokedFetchProductsCount, 2)
+        XCTAssertEqual(interactor.invokedFetchProductsParameters?.startIndex, 48)
         XCTAssertEqual(view.invokedReloadCollectionViewCount, 2)
     }
     
@@ -150,6 +151,10 @@ final class ProductListPresenterTests: XCTestCase {
         
         XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 800).height, 288)
         XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 800).width, 180)
+    }
+    
+    func test_handleRequestError_InvokesRequiredMethods() {
+        // TODO: tests for showing alerts etc
     }
 }
 
