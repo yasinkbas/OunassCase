@@ -89,6 +89,30 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductList
         INFOPLIST_FILE: "Modules/ProductList/Resources/Info.plist"
+    scheme:
+      gatherCoverageData: true
+      testTargets:
+        - target: ProductListTests
+          parallelizable: true
+          randomExecutionOrder: true
+    
+  ProductListTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/ProductListModule/
+        group: Tests/
+    resources:
+      - path: Tests/ProductListModule/Resources
+        group: Tests/
+    dependencies:
+      - target: ProductList
+    settings:
+      base:
+        INFOPLIST_FILE: "Tests/ProductListModule/Info.plist"
+    scheme:
+      testPlans:
+        - path: Tests/ProductListModule/ProductListTests.xctestplan
 
   ProductDetail:
     type: framework

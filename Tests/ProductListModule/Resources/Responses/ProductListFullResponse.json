@@ -1,0 +1,4287 @@
+{
+  "routeType": "plp-v2",
+  "l2CategoryUrl": "women/clothing",
+  "deepLink": "https://mewj.adj.st/api/v2/women/clothing?fh_start_index=0&adj_t=bzl5jsd&adjust_redirect=https%3A%2F%2Fwww.ounass.ae%2Fapi%2Fv2%2Fwomen%2Fclothing%3Ffh_start_index%3D0&route=1_plp_url%3Bwomen.clothing",
+  "deepLinks": {
+    "ios": "https://mewj.adj.st/api/v2/women/clothing?fh_start_index=0&adj_t=bzl5jsd&adjust_fallback=https%3A%2F%2Fwww.ounass.ae%2Fapi%2Fv2%2Fwomen%2Fclothing%3Ffh_start_index%3D0&route=1_plp_url%3Bwomen.clothing",
+    "android": "https://mewj.adj.st/api/v2/women/clothing?fh_start_index=0&adj_t=arbn2ki&adjust_deeplink=ounassapplication%3A%2F%2Fsplash%2Fapi%2Fv2%2Fwomen%2Fclothing%3Ffh_start_index%3D0"
+  },
+  "plp": {
+    "breadcrumbs": [
+      {
+        "categoryId": 3110,
+        "name": "Women",
+        "urlPath": "/women"
+      },
+      {
+        "categoryId": 20,
+        "name": "Clothing",
+        "urlPath": "/women/clothing"
+      }
+    ],
+    "pageTitle": "Clothing",
+    "plpBanner": {
+      "contentTypeId": "plpBanner",
+      "contentId": "4P9Y1w7IJot5EeJ2X377v2",
+      "name": "Women Category PLP Banner - Clothing",
+      "analyticsName": "Women Category PLP Banner - Clothing",
+      "analyticsTracking": true,
+      "analyticsId": "plpBanner",
+      "headline": "Clothing",
+      "mobileImage": {
+        "contentTypeId": "asset",
+        "title": "WW Clothing APP PLP Banner",
+        "type": "image/jpeg",
+        "details": {
+          "size": 124027,
+          "image": {
+            "width": 750,
+            "height": 430
+          }
+        },
+        "url": "//ounass-ae.atgcdn.ae/contentful/b3xlytuyfm3e/24hl7knLas0BqgjPODBS9n/16a9c75f7f590ad98d8c0f88af2172b7/WW_Clothing_APP_PLP_Banner.jpg?q=70",
+        "aspectRatio": 1.744186046511628
+      },
+      "desktopImage": {
+        "contentTypeId": "asset",
+        "title": "WW Clothing DSK PLP Banner",
+        "type": "image/jpeg",
+        "details": {
+          "size": 265413,
+          "image": {
+            "width": 1180,
+            "height": 660
+          }
+        },
+        "url": "//ounass-ae.atgcdn.ae/contentful/b3xlytuyfm3e/4NcqKkJsulf2pFGEKe8oIF/fc5975329c34711fc39551551501dee2/WW_Clothing_DSK_PLP_Banner.jpg?q=70",
+        "aspectRatio": 1.7878787878787878
+      },
+      "description": "From designer blouses and captivating gowns to LOEWE jeans and leather jackets, our curated selection of clothing offers both style and sophistication. Step into the spotlight with Maje dresses and make a bold statement with Gucci t-shirts. Discover the perfect pieces to enhance your wardrobe.",
+      "descriptionDesktop": "<p>From designer blouses and captivating <a href=\"/women/clothing/dresses/gowns\">gowns</a> to <a href=\"/women/designers/loewe/clothing/jeans\">LOEWE jeans</a> and leather jackets, our curated selection of clothing offers both style and sophistication. Step into the spotlight with <a href=\"/women/designers/maje/clothing/dresses\">Maje dresses</a> and make a bold statement with Gucci t-shirts. Discover the perfect pieces to enhance your wardrobe.</p>"
+    },
+    "plpListingBanner": {
+      "contentTypeId": "plpListingBanner",
+      "contentId": "6KIz7lSJXjZ6T3lMV2OLXJ",
+      "name": "PLP Listing Banner - Women - Ramadan Extended Delivery - UAE",
+      "analyticsName": "PLP Listing Banner - Women - Ramadan Extended Delivery - UAE",
+      "rowCount": 1,
+      "components": [
+        {
+          "contentTypeId": "promoStrip",
+          "contentId": "7apY57NotgR3eN3ko8lhDd",
+          "name": "Strip - Women - Ramadan Extended Delivery - UAE",
+          "analyticsName": "Strip - Women - Ramadan Extended Delivery - UAE",
+          "mobileMedia": {
+            "contentTypeId": "asset",
+            "title": "WW AfterDark PLPListing APP EN UAE",
+            "type": "image/jpeg",
+            "details": {
+              "size": 72150,
+              "image": {
+                "width": 750,
+                "height": 565
+              }
+            },
+            "url": "//ounass-ae.atgcdn.ae/contentful/b3xlytuyfm3e/65FzqJRgUDgGEvVnC9EMum/78f9d069f92f501c01f0b26ef9e55a13/WW_AfterDark_PLPListing_APP_EN_UAE.jpg?q=70",
+            "aspectRatio": 1.3274336283185841
+          },
+          "desktopMedia": {
+            "contentTypeId": "asset",
+            "title": "WW After Dark PLPListing DSK EN UAE",
+            "type": "image/jpeg",
+            "details": {
+              "size": 71027,
+              "image": {
+                "width": 1680,
+                "height": 349
+              }
+            },
+            "url": "//ounass-ae.atgcdn.ae/contentful/b3xlytuyfm3e/7iqAb3Q3mul0NpPjCXAi60/2f8a6a569f7122c1fb9ea9f9c5ef87e9/WW_After_Dark_PLPListing_DSK_EN_UAE.jpg?q=70",
+            "aspectRatio": 4.813753581661891
+          },
+          "columnMobile": "",
+          "columnDesktop": "",
+          "categoryUrl": "women/ramadan/shop-by/ramadan-ready",
+          "routeType": "category",
+          "appLink": "0_plp_url;women.ramadan.shop-by.ramadan-ready",
+          "analyticsId": "promoStrip"
+        }
+      ],
+      "analyticsTracking": true,
+      "creative": "english"
+    },
+    "searchString": null,
+    "facets": [
+      {
+        "title": "Category",
+        "catalogAttribute": "categories",
+        "name": "categories",
+        "searchable": false,
+        "showCheckbox": false,
+        "options": [
+          {
+            "optionId": "175",
+            "name": "Dresses",
+            "href": "/women/clothing/dresses",
+            "rel": "",
+            "numberOfStyleColors": 8057
+          },
+          {
+            "optionId": "279",
+            "name": "Tops",
+            "href": "/women/clothing/tops",
+            "rel": "",
+            "numberOfStyleColors": 4268
+          },
+          {
+            "optionId": "11598",
+            "name": "Swimwear",
+            "href": "/women/clothing/swimwear",
+            "rel": "",
+            "numberOfStyleColors": 1786
+          },
+          {
+            "optionId": "180",
+            "name": "Pants",
+            "href": "/women/clothing/pants",
+            "rel": "",
+            "numberOfStyleColors": 1476
+          },
+          {
+            "optionId": "173",
+            "name": "Beachwear",
+            "href": "/women/clothing/beachwear",
+            "rel": "",
+            "numberOfStyleColors": 1059
+          },
+          {
+            "optionId": "4881",
+            "name": "Activewear",
+            "href": "/women/clothing/active-wear",
+            "rel": "",
+            "numberOfStyleColors": 1015
+          },
+          {
+            "optionId": "4830",
+            "name": "Abayas",
+            "href": "/women/clothing/abayas",
+            "rel": "",
+            "numberOfStyleColors": 953
+          },
+          {
+            "optionId": "5088",
+            "name": "Loungewear",
+            "href": "/women/clothing/loungewear",
+            "rel": "",
+            "numberOfStyleColors": 834
+          },
+          {
+            "optionId": "181",
+            "name": "Skirts",
+            "href": "/women/clothing/skirts",
+            "rel": "",
+            "numberOfStyleColors": 748
+          },
+          {
+            "optionId": "174",
+            "name": "Coats & Jackets",
+            "href": "/women/clothing/coats-jackets",
+            "rel": "",
+            "numberOfStyleColors": 744
+          },
+          {
+            "optionId": "12310",
+            "name": "Co-ord Sets",
+            "href": "/women/clothing/co-ord-sets",
+            "rel": "",
+            "numberOfStyleColors": 630
+          },
+          {
+            "optionId": "179",
+            "name": "Knitwear",
+            "href": "/women/clothing/knitwear",
+            "rel": "",
+            "numberOfStyleColors": 557
+          },
+          {
+            "optionId": "177",
+            "name": "Jeans",
+            "href": "/women/clothing/jeans",
+            "rel": "",
+            "numberOfStyleColors": 428
+          },
+          {
+            "optionId": "1442",
+            "name": "Shorts",
+            "href": "/women/clothing/shorts",
+            "rel": "",
+            "numberOfStyleColors": 411
+          },
+          {
+            "optionId": "7760",
+            "name": "Lingerie",
+            "href": "/women/clothing/lingerie",
+            "rel": "",
+            "numberOfStyleColors": 352
+          },
+          {
+            "optionId": "178",
+            "name": "Jumpsuits",
+            "href": "/women/clothing/jumpsuits",
+            "rel": "",
+            "numberOfStyleColors": 243
+          },
+          {
+            "optionId": "4611",
+            "name": "Sleepwear",
+            "href": "/women/clothing/sleepwear",
+            "rel": "",
+            "numberOfStyleColors": 207
+          },
+          {
+            "optionId": "13514",
+            "name": "Skiwear",
+            "href": "/women/clothing/skiwear",
+            "rel": "",
+            "numberOfStyleColors": 102
+          },
+          {
+            "optionId": "12147",
+            "name": "Shapewear",
+            "href": "/women/clothing/shapewear",
+            "rel": "",
+            "numberOfStyleColors": 21
+          }
+        ],
+        "link": {
+          "type": "more",
+          "text": "SHOW MORE",
+          "href": "/women/clothing?fh_start_index=0&fh_maxdisplaynrvalues_categories=-1"
+        }
+      },
+      {
+        "title": "Designer",
+        "catalogAttribute": "designer",
+        "name": "designerCategoryName",
+        "searchable": true,
+        "searchFieldPlaceholder": "Search designers",
+        "showCheckbox": true,
+        "options": [
+          {
+            "optionId": "9337",
+            "name": "12 STOREEZ",
+            "href": "/women/clothing?fh_location=/designer>{9337}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 208
+          },
+          {
+            "optionId": "1783",
+            "name": "16 Arlington",
+            "href": "/women/clothing?fh_location=/designer>{1783}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 16
+          },
+          {
+            "optionId": "11555",
+            "name": "21SIX",
+            "href": "/women/clothing?fh_location=/designer>{11555}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 13
+          },
+          {
+            "optionId": "294",
+            "name": "3.1 Phillip Lim",
+            "href": "/women/clothing?fh_location=/designer>{294}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 46
+          },
+          {
+            "optionId": "5485",
+            "name": "7 DAYS ACTIVE",
+            "href": "/women/clothing?fh_location=/designer>{5485}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 4
+          },
+          {
+            "optionId": "6724",
+            "name": "A.W.A.K.E Mode",
+            "href": "/women/clothing?fh_location=/designer>{6724}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 20
+          },
+          {
+            "optionId": "4365",
+            "name": "Aanchal Chanda",
+            "href": "/women/clothing?fh_location=/designer>{4365}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 9
+          },
+          {
+            "optionId": "5585",
+            "name": "AC by Aanchal Chanda",
+            "href": "/women/clothing?fh_location=/designer>{5585}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 46
+          },
+          {
+            "optionId": "1546",
+            "name": "Acler",
+            "href": "/women/clothing?fh_location=/designer>{1546}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 64
+          },
+          {
+            "optionId": "709",
+            "name": "Acne Studios",
+            "href": "/women/clothing?fh_location=/designer>{709}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 60
+          }
+        ],
+        "link": {
+          "type": "more",
+          "text": "SHOW MORE",
+          "href": "/women/clothing?fh_start_index=0&fh_maxdisplaynrvalues_designer=-1"
+        }
+      },
+      {
+        "title": "Clothing Size",
+        "catalogAttribute": "rtwsizecodefacet",
+        "name": "rtwSizeCodeFacet",
+        "searchable": false,
+        "showCheckbox": true,
+        "options": [
+          {
+            "optionId": "xxs",
+            "name": "XXS",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{xxs}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 975
+          },
+          {
+            "optionId": "xs",
+            "name": "XS",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{xs}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 9077
+          },
+          {
+            "optionId": "s",
+            "name": "S",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{s}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 13844
+          },
+          {
+            "optionId": "m",
+            "name": "M",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{m}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 14480
+          },
+          {
+            "optionId": "l",
+            "name": "L",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{l}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 13426
+          },
+          {
+            "optionId": "xl",
+            "name": "XL",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{xl}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 8813
+          },
+          {
+            "optionId": "xxl",
+            "name": "XXL",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{xxl}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 2720
+          },
+          {
+            "optionId": "xxxl",
+            "name": "XXXL",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{xxxl}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 844
+          },
+          {
+            "optionId": "xxxxl",
+            "name": "XXXXL",
+            "href": "/women/clothing?fh_location=/rtwsizecodefacet>{xxxxl}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 101
+          }
+        ]
+      },
+      {
+        "title": "Colour",
+        "catalogAttribute": "colorfacet",
+        "name": "colorFacet",
+        "searchable": false,
+        "showCheckbox": true,
+        "options": [
+          {
+            "optionId": "13",
+            "hex": "#000000",
+            "name": "Black",
+            "href": "/women/clothing?fh_location=/colorfacet>{13}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 5683
+          },
+          {
+            "optionId": "14",
+            "hex": "#000064",
+            "name": "Blue",
+            "href": "/women/clothing?fh_location=/colorfacet>{14}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 3148
+          },
+          {
+            "optionId": "21",
+            "hex": "#c7c0b3",
+            "name": "Neutral",
+            "href": "/women/clothing?fh_location=/colorfacet>{21}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 2280
+          },
+          {
+            "optionId": "26",
+            "hex": "#ffffff",
+            "showBorder": true,
+            "name": "White",
+            "href": "/women/clothing?fh_location=/colorfacet>{26}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 2039
+          },
+          {
+            "optionId": "23",
+            "hex": "#ff38af",
+            "name": "Pink",
+            "href": "/women/clothing?fh_location=/colorfacet>{23}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 1632
+          },
+          {
+            "optionId": "20",
+            "hex": "#006400",
+            "name": "Green",
+            "href": "/women/clothing?fh_location=/colorfacet>{20}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 1378
+          },
+          {
+            "optionId": "25",
+            "hex": "#d40f0f",
+            "name": "Red",
+            "href": "/women/clothing?fh_location=/colorfacet>{25}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 1020
+          },
+          {
+            "optionId": "15",
+            "hex": "#cfae9b",
+            "name": "Brown",
+            "href": "/women/clothing?fh_location=/colorfacet>{15}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 1004
+          },
+          {
+            "optionId": "19",
+            "hex": "#949494",
+            "name": "Grey",
+            "href": "/women/clothing?fh_location=/colorfacet>{19}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 960
+          },
+          {
+            "optionId": "18",
+            "image": "url('//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/media/attribute/swatch/m/u/multi-color_1.png')",
+            "name": "Multicolour",
+            "href": "/women/clothing?fh_location=/colorfacet>{18}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 934
+          },
+          {
+            "optionId": "24",
+            "hex": "#9a2eff",
+            "name": "Purple",
+            "href": "/women/clothing?fh_location=/colorfacet>{24}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 651
+          },
+          {
+            "optionId": "27",
+            "hex": "#ffdd00",
+            "name": "Yellow",
+            "href": "/women/clothing?fh_location=/colorfacet>{27}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 420
+          },
+          {
+            "optionId": "22",
+            "hex": "#ff8c00",
+            "name": "Orange",
+            "href": "/women/clothing?fh_location=/colorfacet>{22}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 332
+          },
+          {
+            "optionId": "248",
+            "hex": "#c9b873",
+            "name": "Gold",
+            "href": "/women/clothing?fh_location=/colorfacet>{248}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 194
+          },
+          {
+            "optionId": "16",
+            "hex": "#5c0101",
+            "name": "Burgundy",
+            "href": "/women/clothing?fh_location=/colorfacet>{16}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 55
+          },
+          {
+            "optionId": "247",
+            "hex": "#c0c0c0",
+            "name": "Silver",
+            "href": "/women/clothing?fh_location=/colorfacet>{247}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 29
+          },
+          {
+            "optionId": "206",
+            "hex": "#daa892",
+            "name": "Rose Gold",
+            "href": "/women/clothing?fh_location=/colorfacet>{206}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 8
+          },
+          {
+            "optionId": "17",
+            "hex": "#fad6a5",
+            "name": "Metallic",
+            "href": "/women/clothing?fh_location=/colorfacet>{17}",
+            "rel": "noindex nofollow",
+            "numberOfStyleColors": 7
+          }
+        ]
+      },
+      {
+        "title": "Price",
+        "catalogAttribute": "pricebycustomergroupid_1_ae",
+        "name": "minPrice",
+        "globalrange": {
+          "min": 50,
+          "max": 38500
+        },
+        "action": "/women/clothing",
+        "inputs": [
+          [
+            "rangeAttribute",
+            "pricebycustomergroupid_1_ae"
+          ]
+        ]
+      }
+    ],
+    "pagination": {
+      "infinite": true,
+      "totalItems": 21619,
+      "currentSet": 1,
+      "viewSize": 48,
+      "styleColorProgress": "Showing 48 items",
+      "previousPage": {
+        "label": "Previous"
+      },
+      "nextPage": {
+        "label": "Next",
+        "href": "/women/clothing?fh_start_index=48"
+      },
+      "pageText": "Page",
+      "pageProgress": "1 of 451"
+    },
+    "sortBy": [
+      {
+        "key": "popularity",
+        "text": "Ounass Picks",
+        "href": "/women/clothing"
+      },
+      {
+        "key": "newness",
+        "text": "Newest",
+        "href": "/women/clothing?fh_sort_by=-newness_ae"
+      },
+      {
+        "key": "likes",
+        "text": "Most Wishlisted",
+        "href": "/women/clothing?fh_sort_by=-wishlistcount_ae,newness_ae"
+      },
+      {
+        "key": "lowest_price",
+        "text": "Lowest Price",
+        "href": "/women/clothing?fh_sort_by=pricebycustomergroupid_1_ae"
+      },
+      {
+        "key": "highest_price",
+        "text": "Highest Price",
+        "href": "/women/clothing?fh_sort_by=-pricebycustomergroupid_1_ae"
+      }
+    ],
+    "sortBySelectedIndex": 0,
+    "styleColors": [
+      {
+        "styleColorId": "217745930_185",
+        "slug": "shop-needle-thread-floral-off-shoulder-gown-in-tulle-for-women-217745930_185",
+        "designerCategoryName": "Needle & Thread",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217745930_cream_in.jpg?ts=1733935041.8102",
+        "name": "Floral Off-shoulder Gown in Tulle",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "217745930",
+        "discounted": "no",
+        "wishlistCount": 116,
+        "url": "/shop-needle-thread-floral-off-shoulder-gown-in-tulle-for-women-217745930_185.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Needle & Thread",
+        "nameInEnglish": "Floral Off-shoulder Gown in Tulle",
+        "categoryUrl": "",
+        "colorInEnglish": "Neutral",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Off-Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217745930_cream_fr.jpg?ts=1733935041.8102",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 4250,
+        "colors": [
+          {
+            "styleColorId": "217745930_185",
+            "url": "/shop-needle-thread-floral-off-shoulder-gown-in-tulle-for-women-217745930_185.html",
+            "hex": "#c7c0b3",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217745930_cream_in.jpg?ts=1733935041.8102"
+          },
+          {
+            "styleColorId": "217745930_181",
+            "url": "/shop-needle-thread-floral-off-shoulder-gown-in-tulle-for-women-217745930_181.html",
+            "hex": "#000064",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217745930_lbl_in.jpg?ts=1733935041.8102"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 144,
+            "sizeCode": "18",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 138,
+            "sizeCode": "20",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 137,
+            "sizeCode": "22",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217667797_171",
+        "slug": "shop-solace-london-charo-asymmetric-hem-gown-in-twill-for-women-217667797_171",
+        "designerCategoryName": "Solace London",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217667797_lpi_in.jpg?ts=1732077614.3977",
+        "name": "Charo Asymmetric Hem Gown in Twill",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "217667797",
+        "discounted": "no",
+        "wishlistCount": 87,
+        "url": "/shop-solace-london-charo-asymmetric-hem-gown-in-twill-for-women-217667797_171.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Solace London",
+        "nameInEnglish": "Charo Asymmetric Hem Gown in Twill",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "One Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217667797_lpi_fr.jpg?ts=1732077614.3977",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3750,
+        "colors": [
+          {
+            "styleColorId": "217667797_191",
+            "url": "/shop-solace-london-charo-gown-in-twill-for-women-217667797_191.html",
+            "hex": "#c7c0b3",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217667797_offwhite_in.jpg?ts=1732077614.3977"
+          },
+          {
+            "styleColorId": "217667797_248",
+            "url": "/shop-solace-london-charo-one-shoulder-gown-in-twill-for-women-217667797_248.html",
+            "hex": "#c9b873",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217667797_gold_in.jpg?ts=1732077614.3977"
+          },
+          {
+            "styleColorId": "217667797_171",
+            "url": "/shop-solace-london-charo-asymmetric-hem-gown-in-twill-for-women-217667797_171.html",
+            "hex": "#ff38af",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217667797_lpi_in.jpg?ts=1732077614.3977"
+          },
+          {
+            "styleColorId": "217667797_14",
+            "url": "/shop-solace-london-charo-gown-in-twill-for-women-217667797_14.html",
+            "hex": "#000064",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217667797_blue_in.jpg?ts=1732077614.3977"
+          },
+          {
+            "styleColorId": "217667797_2709",
+            "url": "/shop-solace-london-charo-one-shoulder-gown-in-twill-for-women-217667797_2709.html",
+            "hex": "#000000",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217667797_blk_in.jpg?ts=1732077614.3977"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217651345_24",
+        "slug": "shop-jovani-slit-gown-in-scuba-for-women-217651345_24",
+        "designerCategoryName": "Jovani",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217651345_purple_in.jpg?ts=1739710588.0398",
+        "name": "Slit Gown in Scuba",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "217651345",
+        "discounted": "no",
+        "wishlistCount": 30,
+        "url": "/shop-jovani-slit-gown-in-scuba-for-women-217651345_24.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Jovani",
+        "nameInEnglish": "Slit Gown in Scuba",
+        "categoryUrl": "",
+        "colorInEnglish": "Purple",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Strapless",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217651345_purple_fr.jpg?ts=1739710588.0398",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2750,
+        "colors": [
+          {
+            "styleColorId": "217651345_23",
+            "url": "/shop-jovani-slit-gown-in-scuba-for-women-217651345_23.html",
+            "hex": "#ff38af",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217651345_pink_in.jpg?ts=1739710588.0398"
+          },
+          {
+            "styleColorId": "217651345_24",
+            "url": "/shop-jovani-slit-gown-in-scuba-for-women-217651345_24.html",
+            "hex": "#9a2eff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217651345_purple_in.jpg?ts=1739710588.0398"
+          },
+          {
+            "styleColorId": "217651345_245",
+            "url": "/shop-jovani-slit-gown-in-scuba-for-women-217651345_245.html",
+            "hex": "#000000",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217651345_blk_in.jpg?ts=1739710588.0398"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 244,
+            "sizeCode": "0",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 41,
+            "sizeCode": "2",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 40,
+            "sizeCode": "4",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217699658_2709",
+        "slug": "shop-self-portrait-rhinestone-embellished-midi-dress-in-mesh-for-women-217699658_2709",
+        "designerCategoryName": "Self-Portrait",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217699658_blk_in.jpg?ts=1727333111.7511",
+        "name": "Rhinestone-embellished Midi Dress in Mesh",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217699658",
+        "discounted": "no",
+        "wishlistCount": 40,
+        "url": "/shop-self-portrait-rhinestone-embellished-midi-dress-in-mesh-for-women-217699658_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Self-Portrait",
+        "nameInEnglish": "Rhinestone-embellished Midi Dress in Mesh",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Short Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217699658_blk_fr.jpg?ts=1727333111.7511",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2800,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 40,
+            "sizeCode": "4",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218143163_2125",
+        "slug": "shop-zimmermann-illuminate-flounce-mini-dress-in-silk-for-women-218143163_2125",
+        "designerCategoryName": "Zimmermann",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218143163_blumtlclr_in.jpg?ts=1741088981.8245",
+        "name": "Illuminate Flounce Mini Dress in Silk",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218143163",
+        "discounted": "no",
+        "wishlistCount": 15,
+        "url": "/shop-zimmermann-illuminate-flounce-mini-dress-in-silk-for-women-218143163_2125.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Zimmermann",
+        "nameInEnglish": "Illuminate Flounce Mini Dress in Silk",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Mini",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218143163_blumtlclr_fr.jpg?ts=1741088981.8245",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 8600,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 244,
+            "sizeCode": "0",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 41,
+            "sizeCode": "2",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 83,
+            "sizeCode": "3",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217765149_171",
+        "slug": "shop-mac-duggal-sequin-embellished-trumpet-gown-for-women-217765149_171",
+        "designerCategoryName": "Mac Duggal",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217765149_lpi_in.jpg?ts=1738786508.4201",
+        "name": "Sequin-embellished Trumpet Gown",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217765149",
+        "discounted": "no",
+        "wishlistCount": 25,
+        "url": "/shop-mac-duggal-sequin-embellished-trumpet-gown-for-women-217765149_171.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Mac Duggal",
+        "nameInEnglish": "Sequin-embellished Trumpet Gown",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Sleeveless",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217765149_lpi_fr.jpg?ts=1738786508.4201",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3150,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 244,
+            "sizeCode": "0",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 41,
+            "sizeCode": "2",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 40,
+            "sizeCode": "4",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218151082_23",
+        "slug": "shop-acler-sadgill-one-shoulder-maxi-dress-for-women-218151082_23",
+        "designerCategoryName": "Acler",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151082_pink_in.jpg?ts=1741353220.3089",
+        "name": "Sadgill One-shoulder Maxi Dress",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218151082",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-acler-sadgill-one-shoulder-maxi-dress-for-women-218151082_23.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Acler",
+        "nameInEnglish": "Sadgill One-shoulder Maxi Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "One Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151082_pink_fr.jpg?ts=1741353220.3089",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1600,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218133317_26",
+        "slug": "shop-my-beachy-side-poisson-tunic-in-net-for-women-218133317_26",
+        "designerCategoryName": "My Beachy Side",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218133317_white_in.jpg?ts=1741374272.5884",
+        "name": "Poisson Tunic in Net",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218133317",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-my-beachy-side-poisson-tunic-in-net-for-women-218133317_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "My Beachy Side",
+        "nameInEnglish": "Poisson Tunic in Net",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Beachwear",
+        "subClass": "Dresses",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218133317_white_fr.jpg?ts=1741374272.5884",
+        "badge": {
+          "id": 55,
+          "name": "badge",
+          "value": "NEW DESIGNER",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1450,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217682949_14",
+        "slug": "shop-oseree-lumiere-ombre-shade-feather-trim-mini-dress-in-lurex-for-women-217682949_14",
+        "designerCategoryName": "Oseree",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217682949_jh2_in.jpg?ts=1741343772.1591",
+        "name": "Lumière Ombré Shade Feather-trim Mini Dress in Lurex",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "217682949",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-oseree-lumiere-ombre-shade-feather-trim-mini-dress-in-lurex-for-women-217682949_14.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Oséree",
+        "nameInEnglish": "Lumière Ombré Shade Feather-trim Mini Dress in Lurex",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Beachwear",
+        "subClass": "Dresses",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217682949_jh2_fr.jpg?ts=1741343772.1591",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2450,
+        "colors": [
+          {
+            "styleColorId": "217682949_14",
+            "url": "/shop-oseree-lumiere-ombre-shade-feather-trim-mini-dress-in-lurex-for-women-217682949_14.html",
+            "hex": "#000064",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217682949_jh2_in.jpg?ts=1741343772.1591"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217858562_13",
+        "slug": "shop-elisabetta-franchi-gold-ring-maxi-dress-in-viscose-jersey-for-women-217858562_13",
+        "designerCategoryName": "Elisabetta Franchi",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217858562_black_in.jpg?ts=1740671835.5374",
+        "name": "Gold-ring Maxi Dress in Viscose-jersey",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217858562",
+        "discounted": "no",
+        "wishlistCount": 14,
+        "url": "/shop-elisabetta-franchi-gold-ring-maxi-dress-in-viscose-jersey-for-women-217858562_13.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Elisabetta Franchi",
+        "nameInEnglish": "Gold-ring Maxi Dress in Viscose-jersey",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Maxi",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217858562_black_fr.jpg?ts=1740671835.5374",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3800,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 37,
+            "sizeCode": "40",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 44,
+            "sizeCode": "42",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 93,
+            "sizeCode": "44",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 91,
+            "sizeCode": "46",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218165556_26",
+        "slug": "shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_26",
+        "designerCategoryName": "Rauaa Official",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218165556_white_in.jpg?ts=1741165554.4581",
+        "name": "Two-tone Trench Coat Abaya in Linen",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218165556",
+        "discounted": "no",
+        "wishlistCount": 9,
+        "url": "/shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Rauaa official",
+        "nameInEnglish": "Two-tone Trench Coat Abaya in Linen",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Abayas",
+        "subClass": "Casual",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 1,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218165556_white_fr.jpg?ts=1741165554.4581",
+        "badge": {
+          "id": 76,
+          "name": "badge",
+          "value": "RAMADAN EXCLUSIVE",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 855,
+        "colors": [
+          {
+            "styleColorId": "218165556_26",
+            "url": "/shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_26.html",
+            "hex": "#ffffff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218165556_white_in.jpg?ts=1741165554.4581"
+          },
+          {
+            "styleColorId": "218165556_24",
+            "url": "/shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_24.html",
+            "hex": "#9a2eff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218165556_purple_in.jpg?ts=1741165554.4581"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 121,
+            "sizeCode": "52",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 164,
+            "sizeCode": "53",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 122,
+            "sizeCode": "54",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 696,
+            "sizeCode": "55",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 115,
+            "sizeCode": "56",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 145,
+            "sizeCode": "58",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218219282_7762",
+        "slug": "shop-nass-ruffle-off-shoulder-dress-for-women-218219282_7762",
+        "designerCategoryName": "NASS",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218219282_beige_in.jpg?ts=1741085920.591",
+        "name": "Ruffle Off-shoulder Dress",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218219282",
+        "discounted": "no",
+        "wishlistCount": 7,
+        "url": "/shop-nass-ruffle-off-shoulder-dress-for-women-218219282_7762.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "NASS",
+        "nameInEnglish": "Ruffle Off-shoulder Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "Neutral",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "One Shoulder",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218219282_beige_fr.jpg?ts=1741085920.591",
+        "badge": {
+          "id": 62,
+          "name": "badge",
+          "value": "RAMADAN",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2c2c2e",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1300,
+        "colors": [
+          {
+            "styleColorId": "218219282_7762",
+            "url": "/shop-nass-ruffle-off-shoulder-dress-for-women-218219282_7762.html",
+            "hex": "#c7c0b3",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218219282_beige_in.jpg?ts=1741085920.591"
+          },
+          {
+            "styleColorId": "218219282_23",
+            "url": "/shop-nass-ruffle-off-shoulder-dress-for-women-218219282_23.html",
+            "hex": "#ff38af",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218219282_pink_in.jpg?ts=1741085920.591"
+          },
+          {
+            "styleColorId": "218219282_25",
+            "url": "/shop-nass-ruffle-off-shoulder-dress-for-women-218219282_25.html",
+            "hex": "#d40f0f",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218219282_red_in.jpg?ts=1741085920.591"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 84,
+            "sizeCode": "XXL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217784425_26",
+        "slug": "shop-basix-monochrome-one-shoulder-gown-in-crepe-for-women-217784425_26",
+        "designerCategoryName": "Basix",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217784425_white_in.jpg?ts=1740127970.9502",
+        "name": "Monochrome One-shoulder Gown in Crepe",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217784425",
+        "discounted": "no",
+        "wishlistCount": 6,
+        "url": "/shop-basix-monochrome-one-shoulder-gown-in-crepe-for-women-217784425_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Basix",
+        "nameInEnglish": "Monochrome One-shoulder Gown in Crepe",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "One Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217784425_white_fr.jpg?ts=1740127970.9502",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2800,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 244,
+            "sizeCode": "0",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 41,
+            "sizeCode": "2",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 40,
+            "sizeCode": "4",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218219280_2709",
+        "slug": "shop-nass-one-shoulder-ruffle-dress-for-women-218219280_2709",
+        "designerCategoryName": "NASS",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218219280_blk_in.jpg?ts=1740672614.7009",
+        "name": "One-shoulder Ruffle Dress",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218219280",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-nass-one-shoulder-ruffle-dress-for-women-218219280_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "NASS",
+        "nameInEnglish": "One-shoulder Ruffle Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Off-Shoulder",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218219280_blk_fr.jpg?ts=1740672614.7009",
+        "badge": {
+          "id": 62,
+          "name": "badge",
+          "value": "RAMADAN",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2c2c2e",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1300,
+        "colors": [
+          {
+            "styleColorId": "218219280_23",
+            "url": "/shop-nass-one-shoulder-ruffle-dress-for-women-218219280_23.html",
+            "hex": "#ff38af",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218219280_pink_in.jpg?ts=1740672614.7009"
+          },
+          {
+            "styleColorId": "218219280_2709",
+            "url": "/shop-nass-one-shoulder-ruffle-dress-for-women-218219280_2709.html",
+            "hex": "#000000",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218219280_blk_in.jpg?ts=1740672614.7009"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 84,
+            "sizeCode": "XXL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218131048_4904",
+        "slug": "shop-skims-soft-lounge-lace-tank-dress-for-women-218131048_4904",
+        "designerCategoryName": "SKIMS",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218131048_onyx_in.jpg?ts=1737141044.7771",
+        "name": "Soft Lounge Lace Tank Dress",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218131048",
+        "discounted": "no",
+        "wishlistCount": 325,
+        "url": "/shop-skims-soft-lounge-lace-tank-dress-for-women-218131048_4904.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Skims",
+        "nameInEnglish": "Soft Lounge Lace Tank Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Loungewear",
+        "subClass": "Dresses",
+        "gender": "Womens",
+        "season": "Continuity",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218131048_onyx_fr.jpg?ts=1737141044.7771",
+        "price": 420,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 73,
+            "sizeCode": "XXS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 4853,
+            "sizeCode": "2XL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "214212870_6635",
+        "slug": "shop-skims-cotton-rib-tank-for-women-214212870_6635",
+        "designerCategoryName": "SKIMS",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/214212870_cherryblos_in.jpg?ts=1739637531.4518",
+        "name": "Cotton Rib Tank",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "214212870",
+        "discounted": "no",
+        "wishlistCount": 94,
+        "url": "/shop-skims-cotton-rib-tank-for-women-214212870_6635.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Skims",
+        "nameInEnglish": "Cotton Rib Tank",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Loungewear",
+        "subClass": "Lounge Tops",
+        "gender": "Womens",
+        "season": "Continuity",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/214212870_cherryblos_fr.jpg?ts=1739637531.4518",
+        "price": 190,
+        "colors": [
+          {
+            "styleColorId": "214212870_2741",
+            "url": "/shop-skims-cotton-rib-tank-for-women-214212870_2741.html",
+            "hex": "#d6d5c8",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_bone_in.jpg?ts=1739637531.4518"
+          },
+          {
+            "styleColorId": "214212870_7009",
+            "url": "/shop-skims-rib-tank-in-cotton-for-women-214212870_7009.html",
+            "hex": "#939888",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_mineral_in.jpg?ts=1739637531.4518"
+          },
+          {
+            "styleColorId": "214212870_6497",
+            "url": "/shop-skims-cotton-rib-tank-for-women-214212870_6497.html",
+            "hex": "#8c98a4",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_kypal_in.jpg?ts=1739637531.4518"
+          },
+          {
+            "styleColorId": "214212870_4908",
+            "url": "/shop-skims-cotton-rib-tank-for-women-214212870_4908.html",
+            "hex": "#21211f",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_soot_in.jpg?ts=1739637531.4518"
+          },
+          {
+            "styleColorId": "214212870_5882",
+            "url": "/shop-skims-cotton-rib-tank-for-women-214212870_5882.html",
+            "hex": "#bbbbbd",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_lthtgry_in.jpg?ts=1739637531.4518"
+          },
+          {
+            "styleColorId": "214212870_6635",
+            "url": "/shop-skims-cotton-rib-tank-for-women-214212870_6635.html",
+            "hex": "#ff38af",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_cherryblos_in.jpg?ts=1739637531.4518"
+          },
+          {
+            "styleColorId": "214212870_1938",
+            "url": "/shop-skims-rib-tank-in-cotton-for-women-214212870_1938.html",
+            "hex": "#9a2eff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/214212870_ultraviole_in.jpg?ts=1739637531.4518"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 73,
+            "sizeCode": "XXS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 4853,
+            "sizeCode": "2XL",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 4029,
+            "sizeCode": "3XL",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 4030,
+            "sizeCode": "4XL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218094581_14",
+        "slug": "shop-chats-by-c-dam-emera-draped-maxi-dress-in-jersey-for-women-218094581_14",
+        "designerCategoryName": "CHATS by C.Dam",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218094581_blue_in.jpg?ts=1736563579.8971",
+        "name": "Emera Draped Maxi Dress in Jersey",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218094581",
+        "discounted": "no",
+        "wishlistCount": 128,
+        "url": "/shop-chats-by-c-dam-emera-draped-maxi-dress-in-jersey-for-women-218094581_14.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "CHATS by C.Dam",
+        "nameInEnglish": "Emera Draped Maxi Dress in Jersey",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218094581_blue_fr.jpg?ts=1736563579.8971",
+        "badge": {
+          "id": 62,
+          "name": "badge",
+          "value": "RAMADAN",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2c2c2e",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3000,
+        "colors": [
+          {
+            "styleColorId": "218094581_25",
+            "url": "/shop-chats-by-c-dam-emera-draped-maxi-dress-in-jersey-for-women-218094581_25.html",
+            "hex": "#d40f0f",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218094581_red_in.jpg?ts=1736563579.8971"
+          },
+          {
+            "styleColorId": "218094581_14",
+            "url": "/shop-chats-by-c-dam-emera-draped-maxi-dress-in-jersey-for-women-218094581_14.html",
+            "hex": "#000064",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218094581_blue_in.jpg?ts=1736563579.8971"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217765143_2709",
+        "slug": "shop-mac-duggal-embellished-one-shoulder-gown-for-women-217765143_2709",
+        "designerCategoryName": "Mac Duggal",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217765143_blk_in.jpg?ts=1739724032.4998",
+        "name": "Embellished One-shoulder Gown",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217765143",
+        "discounted": "no",
+        "wishlistCount": 25,
+        "url": "/shop-mac-duggal-embellished-one-shoulder-gown-for-women-217765143_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Mac Duggal",
+        "nameInEnglish": "Embellished One-shoulder Gown",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "One Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217765143_blk_fr.jpg?ts=1739724032.4998",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3650,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 244,
+            "sizeCode": "0",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 41,
+            "sizeCode": "2",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 40,
+            "sizeCode": "4",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218190133_2709",
+        "slug": "shop-we11done-single-breasted-belted-blazer-for-women-218190133_2709",
+        "designerCategoryName": "We11Done",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218190133_blk_in.jpg?ts=1741358076.0688",
+        "name": "Single-breasted Belted Blazer",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218190133",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-we11done-single-breasted-belted-blazer-for-women-218190133_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "We11Done",
+        "nameInEnglish": "Single-breasted Belted Blazer",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Blazers",
+        "subClass": "Formal",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218190133_blk_bk.jpg?ts=1741358076.0688",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3450,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218181948_2709",
+        "slug": "shop-alaia-hooded-biker-jacket-in-faille-for-women-218181948_2709",
+        "designerCategoryName": "Alaïa",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218181948_blk_in.jpg?ts=1741346628.6175",
+        "name": "Hooded Biker Jacket in Faille",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218181948",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-alaia-hooded-biker-jacket-in-faille-for-women-218181948_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Alaïa",
+        "nameInEnglish": "Hooded Biker Jacket in Faille",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Outerwear",
+        "subClass": "Jackets",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218181948_blk_fr.jpg?ts=1741346628.6175",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 8100,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 45,
+            "sizeCode": "38",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218218194_7762",
+        "slug": "shop-max-mara-pensile-striped-blazer-in-jersey-for-women-218218194_7762",
+        "designerCategoryName": "Max Mara",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218218194_beige_in.jpg?ts=1741271132.947",
+        "name": "Pensile Striped Blazer in Jersey",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218218194",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-max-mara-pensile-striped-blazer-in-jersey-for-women-218218194_7762.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Max Mara",
+        "nameInEnglish": "Pensile Striped Blazer in Jersey",
+        "categoryUrl": "",
+        "colorInEnglish": "Neutral",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Blazers",
+        "subClass": "Formal",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218218194_beige_fr.jpg?ts=1741271132.947",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 5310,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 45,
+            "sizeCode": "38",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 37,
+            "sizeCode": "40",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 44,
+            "sizeCode": "42",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218212930_26",
+        "slug": "shop-pinko-new-signum-blazer-in-viscose-blend-for-women-218212930_26",
+        "designerCategoryName": "PINKO",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218212930_white_in.jpg?ts=1741189384.1339",
+        "name": "New Signum Blazer in Viscose Blend",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218212930",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-pinko-new-signum-blazer-in-viscose-blend-for-women-218212930_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "PINKO",
+        "nameInEnglish": "New Signum Blazer in Viscose Blend",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Blazers",
+        "subClass": "Formal",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218212930_white_fr.jpg?ts=1741189384.1339",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1600,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 44,
+            "sizeCode": "42",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 93,
+            "sizeCode": "44",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 91,
+            "sizeCode": "46",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218147305_14",
+        "slug": "shop-zimmermann-illuminate-tie-neck-mini-dress-in-denim-for-women-218147305_14",
+        "designerCategoryName": "Zimmermann",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218147305_jh2_in.jpg?ts=1740830007.7775",
+        "name": "Illuminate Tie-neck Mini Dress in Denim",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218147305",
+        "discounted": "no",
+        "wishlistCount": 13,
+        "url": "/shop-zimmermann-illuminate-tie-neck-mini-dress-in-denim-for-women-218147305_14.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Zimmermann",
+        "nameInEnglish": "Illuminate Tie-neck Mini Dress in Denim",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218147305_jh2_fr.jpg?ts=1740830007.7775",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3500,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 244,
+            "sizeCode": "0",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 85,
+            "sizeCode": "1",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 41,
+            "sizeCode": "2",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 83,
+            "sizeCode": "3",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218210017_4067",
+        "slug": "shop-maje-draped-waist-mini-skirt-in-lurex-for-women-218210017_4067",
+        "designerCategoryName": "Maje",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218210017_navy_in.jpg?ts=1741282202.6668",
+        "name": "Draped-waist Mini Skirt in Lurex",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218210017",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-maje-draped-waist-mini-skirt-in-lurex-for-women-218210017_4067.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Maje",
+        "nameInEnglish": "Draped-waist Mini Skirt in Lurex",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Sleeveless",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218210017_navy_fr.jpg?ts=1741282202.6668",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1450,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 50,
+            "sizeCode": "34",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 54,
+            "sizeCode": "36",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 45,
+            "sizeCode": "38",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 37,
+            "sizeCode": "40",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 44,
+            "sizeCode": "42",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218185339_195",
+        "slug": "shop-needle-thread-rose-tallulah-off-houlder-gown-for-women-218185339_195",
+        "designerCategoryName": "Needle & Thread",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218185339_multi_in.jpg?ts=1741352226.9752",
+        "name": "Rose Tallulah Off-houlder Gown",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218185339",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-needle-thread-rose-tallulah-off-houlder-gown-for-women-218185339_195.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Needle & Thread",
+        "nameInEnglish": "Rose Tallulah Off-houlder Gown",
+        "categoryUrl": "",
+        "colorInEnglish": "Multicolour",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Off-Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218185339_multi_fr.jpg?ts=1741352226.9752",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2350,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218086359_26",
+        "slug": "shop-tadashi-shoji-rhinestone-trim-kaftan-in-lace-for-women-218086359_26",
+        "designerCategoryName": "Tadashi Shoji",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218086359_white_in.jpg?ts=1741174902.9784",
+        "name": "Rhinestone-trim Kaftan in Lace",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218086359",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-tadashi-shoji-rhinestone-trim-kaftan-in-lace-for-women-218086359_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Tadashi Shoji",
+        "nameInEnglish": "Rhinestone-trim Kaftan in Lace",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Kaftans",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218086359_white_fr.jpg?ts=1741174902.9784",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3650,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 89,
+            "sizeCode": "S/M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 90,
+            "sizeCode": "M/L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217871169_211",
+        "slug": "shop-kith-hunter-ii-needlepoint-quarter-zip-sweatshirt-in-french-terry-for-women-217871169_211",
+        "designerCategoryName": "Kith",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217871169_darkbrown_in.jpg?ts=1732030397.0659",
+        "name": "Hunter II Needlepoint Quarter Zip Sweatshirt in French Terry",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217871169",
+        "discounted": "no",
+        "wishlistCount": 65,
+        "url": "/shop-kith-hunter-ii-needlepoint-quarter-zip-sweatshirt-in-french-terry-for-women-217871169_211.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Kith",
+        "nameInEnglish": "Hunter II Needlepoint Quarter Zip Sweatshirt in French Terry",
+        "categoryUrl": "",
+        "colorInEnglish": "Brown",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Sweatshirts",
+        "subClass": "Half Zip",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217871169_darkbrown_fr.jpg?ts=1732030397.0659",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 825,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217866339_191",
+        "slug": "shop-vince-tipped-half-moon-cardigan-in-wool-blend-for-women-217866339_191",
+        "designerCategoryName": "Vince",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217866339_offwhite_in.jpg?ts=1741284637.3229",
+        "name": "Tipped Half Moon Cardigan in Wool Blend",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217866339",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-vince-tipped-half-moon-cardigan-in-wool-blend-for-women-217866339_191.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Vince",
+        "nameInEnglish": "Tipped Half Moon Cardigan in Wool Blend",
+        "categoryUrl": "",
+        "colorInEnglish": "Neutral",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Knitwear",
+        "subClass": "Cardigans",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217866339_offwhite_fr.jpg?ts=1741284637.3229",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1800,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218126533_26",
+        "slug": "shop-loewe-draped-shirt-in-cotton-for-women-218126533_26",
+        "designerCategoryName": "LOEWE",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218126533_white_in.jpg?ts=1739644139.9097",
+        "name": "Draped Shirt in Cotton",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218126533",
+        "discounted": "no",
+        "wishlistCount": 23,
+        "url": "/shop-loewe-draped-shirt-in-cotton-for-women-218126533_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "LOEWE",
+        "nameInEnglish": "Draped Shirt in Cotton",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Shirts",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218126533_white_fr.jpg?ts=1739644139.9097",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 4500,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 45,
+            "sizeCode": "38",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217750911_14",
+        "slug": "shop-loewe-anagram-barrel-jeans-in-denim-for-women-217750911_14",
+        "designerCategoryName": "LOEWE",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217750911_blue_in.jpg?ts=1735750701.5701",
+        "name": "Anagram Barrel Jeans in Denim",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217750911",
+        "discounted": "no",
+        "wishlistCount": 124,
+        "url": "/shop-loewe-anagram-barrel-jeans-in-denim-for-women-217750911_14.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "LOEWE",
+        "nameInEnglish": "Anagram Barrel Jeans in Denim",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Denim",
+        "subClass": "Wide Leg",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217750911_blue_fr.jpg?ts=1735750701.5701",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3700,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 54,
+            "sizeCode": "36",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 45,
+            "sizeCode": "38",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 37,
+            "sizeCode": "40",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 44,
+            "sizeCode": "42",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218165556_24",
+        "slug": "shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_24",
+        "designerCategoryName": "Rauaa Official",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218165556_purple_in.jpg?ts=1741165565.6426",
+        "name": "Two-tone Trench Coat Abaya in Linen",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218165556",
+        "discounted": "no",
+        "wishlistCount": 4,
+        "url": "/shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_24.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Rauaa official",
+        "nameInEnglish": "Two-tone Trench Coat Abaya in Linen",
+        "categoryUrl": "",
+        "colorInEnglish": "Purple",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Abayas",
+        "subClass": "Casual",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 1,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218165556_purple_fr.jpg?ts=1741165565.6426",
+        "badge": {
+          "id": 76,
+          "name": "badge",
+          "value": "RAMADAN EXCLUSIVE",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 855,
+        "colors": [
+          {
+            "styleColorId": "218165556_26",
+            "url": "/shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_26.html",
+            "hex": "#ffffff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218165556_white_in.jpg?ts=1741165565.6426"
+          },
+          {
+            "styleColorId": "218165556_24",
+            "url": "/shop-rauaa-official-two-tone-trench-coat-abaya-in-linen-for-women-218165556_24.html",
+            "hex": "#9a2eff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218165556_purple_in.jpg?ts=1741165565.6426"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 121,
+            "sizeCode": "52",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 164,
+            "sizeCode": "53",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 122,
+            "sizeCode": "54",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 696,
+            "sizeCode": "55",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 115,
+            "sizeCode": "56",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 145,
+            "sizeCode": "58",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218165543_2709",
+        "slug": "shop-rauaa-official-bead-embellished-abaya-in-nada-organza-for-women-218165543_2709",
+        "designerCategoryName": "Rauaa Official",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218165543_blk_in.jpg?ts=1741165448.2537",
+        "name": "Bead-embellished Abaya in Nada & Organza",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218165543",
+        "discounted": "no",
+        "wishlistCount": 12,
+        "url": "/shop-rauaa-official-bead-embellished-abaya-in-nada-organza-for-women-218165543_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Rauaa official",
+        "nameInEnglish": "Bead-embellished Abaya in Nada & Organza",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Abayas",
+        "subClass": "Casual",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 1,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218165543_blk_fr.jpg?ts=1741165448.2537",
+        "badge": {
+          "id": 76,
+          "name": "badge",
+          "value": "RAMADAN EXCLUSIVE",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 855,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 121,
+            "sizeCode": "52",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 122,
+            "sizeCode": "54",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 696,
+            "sizeCode": "55",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 115,
+            "sizeCode": "56",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 145,
+            "sizeCode": "58",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217675744_20",
+        "slug": "shop-oseree-shiny-striped-o-ring-kaftan-for-women-217675744_20",
+        "designerCategoryName": "Oseree",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217675744_green2_in.jpg?ts=1741351672.6718",
+        "name": "Shiny Striped O-ring Kaftan",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217675744",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-oseree-shiny-striped-o-ring-kaftan-for-women-217675744_20.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Oséree",
+        "nameInEnglish": "Shiny Striped O-ring Kaftan",
+        "categoryUrl": "",
+        "colorInEnglish": "Green",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Beachwear",
+        "subClass": "Kaftans",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217675744_green2_fr.jpg?ts=1741351672.6718",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1250,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218086358_23",
+        "slug": "shop-tadashi-shoji-corded-embroidered-lace-kaftan-for-women-218086358_23",
+        "designerCategoryName": "Tadashi Shoji",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218086358_pink_in.jpg?ts=1741175577.8007",
+        "name": "Corded Embroidered Lace Kaftan",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218086358",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-tadashi-shoji-corded-embroidered-lace-kaftan-for-women-218086358_23.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Tadashi Shoji",
+        "nameInEnglish": "Corded Embroidered Lace Kaftan",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Kaftans",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218086358_pink_fr.jpg?ts=1741175577.8007",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3450,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 89,
+            "sizeCode": "S/M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 90,
+            "sizeCode": "M/L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218151090_26",
+        "slug": "shop-acler-whittington-pleated-gown-for-women-218151090_26",
+        "designerCategoryName": "Acler",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151090_white_in.jpg?ts=1741352565.1785",
+        "name": "Whittington Pleated Gown",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218151090",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-acler-whittington-pleated-gown-for-women-218151090_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Acler",
+        "nameInEnglish": "Whittington Pleated Gown",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "One Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151090_white_fr.jpg?ts=1741352565.1785",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 3800,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218151086_23",
+        "slug": "shop-acler-pennarly-midi-dress-in-linen-blend-for-women-218151086_23",
+        "designerCategoryName": "Acler",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151086_pink_in.jpg?ts=1741352594.1924",
+        "name": "Pennarly Midi Dress in Linen-blend",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218151086",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-acler-pennarly-midi-dress-in-linen-blend-for-women-218151086_23.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Acler",
+        "nameInEnglish": "Pennarly Midi Dress in Linen-blend",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151086_pink_fr.jpg?ts=1741352594.1924",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1750,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218151087_191",
+        "slug": "shop-acler-odder-midi-dress-in-jersey-for-women-218151087_191",
+        "designerCategoryName": "Acler",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151087_offwhite_in.jpg?ts=1741352537.9268",
+        "name": "Odder Midi Dress in Jersey",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218151087",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-acler-odder-midi-dress-in-jersey-for-women-218151087_191.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Acler",
+        "nameInEnglish": "Odder Midi Dress in Jersey",
+        "categoryUrl": "",
+        "colorInEnglish": "Neutral",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Off-Shoulder",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151087_offwhite_fr.jpg?ts=1741352537.9268",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1300,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218151084_23",
+        "slug": "shop-acler-dailley-pleated-midi-dress-for-women-218151084_23",
+        "designerCategoryName": "Acler",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151084_pink_in.jpg?ts=1741348350.737",
+        "name": "Dailley Pleated Midi Dress",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218151084",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-acler-dailley-pleated-midi-dress-for-women-218151084_23.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Acler",
+        "nameInEnglish": "Dailley Pleated Midi Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "Pink",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218151084_pink_fr.jpg?ts=1741348350.737",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2100,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 39,
+            "sizeCode": "6",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217866340_192",
+        "slug": "shop-vince-pleated-midi-dress-for-women-217866340_192",
+        "designerCategoryName": "Vince",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217866340_darkgreen_in.jpg?ts=1741284366.7634",
+        "name": "Pleated Midi Dress",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217866340",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-vince-pleated-midi-dress-for-women-217866340_192.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Vince",
+        "nameInEnglish": "Pleated Midi Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "Green",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217866340_darkgreen_fr.jpg?ts=1741284366.7634",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1800,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218163983_197",
+        "slug": "shop-de-la-vali-hausos-maxi-dress-in-chiffon-for-women-218163983_197",
+        "designerCategoryName": "De La Vali",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218163983_dgrey_in.jpg?ts=1741338209.2156",
+        "name": "Hausos Maxi Dress in Chiffon",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218163983",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-de-la-vali-hausos-maxi-dress-in-chiffon-for-women-218163983_197.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "De La Vali",
+        "nameInEnglish": "Hausos Maxi Dress in Chiffon",
+        "categoryUrl": "",
+        "colorInEnglish": "Grey",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Long Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218163983_dgrey_fr.jpg?ts=1741338209.2156",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 2350,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 42,
+            "sizeCode": "8",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218216206_174",
+        "slug": "shop-lallee-elegant-eden-dress-in-knit-spandex-jacquard-for-women-218216206_174",
+        "designerCategoryName": "Lallee",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218216206_darkred_in.jpg?ts=1741267211.0746",
+        "name": "Elegant Eden Dress in Knit Spandex & Jacquard",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "218216206",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-lallee-elegant-eden-dress-in-knit-spandex-jacquard-for-women-218216206_174.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Lallee",
+        "nameInEnglish": "Elegant Eden Dress in Knit Spandex & Jacquard",
+        "categoryUrl": "",
+        "colorInEnglish": "Red",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Short Sleeve",
+        "gender": "Womens",
+        "season": "Ramadan 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218216206_darkred_fr.jpg?ts=1741267211.0746",
+        "badge": {
+          "id": 62,
+          "name": "badge",
+          "value": "RAMADAN",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2c2c2e",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1910,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 61,
+            "sizeCode": "10",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 60,
+            "sizeCode": "12",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 70,
+            "sizeCode": "14",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 126,
+            "sizeCode": "16",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218220807_26",
+        "slug": "shop-mcqueen-asymmetric-pleated-maxi-dress-for-women-218220807_26",
+        "designerCategoryName": "McQueen",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218220807_9015_in.jpg?ts=1741098794.3208",
+        "name": "Asymmetric Pleated Maxi Dress",
+        "simpleType": "simpleWithoutSiblings",
+        "parentSku": "218220807",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-mcqueen-asymmetric-pleated-maxi-dress-for-women-218220807_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "McQueen",
+        "nameInEnglish": "Asymmetric Pleated Maxi Dress",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Dresses",
+        "subClass": "Short Sleeve",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218220807_9015_fr.jpg?ts=1741098794.3208",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 10640,
+        "colors": [],
+        "sizes": [],
+        "showSizeSelector": false
+      },
+      {
+        "styleColorId": "217843047_7762",
+        "slug": "shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_7762",
+        "designerCategoryName": "Eberjey",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217843047_beige_in.jpg?ts=1740561311.1041",
+        "name": "Fine Gauge Sweater Tank in Cotton Blend",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "217843047",
+        "discounted": "no",
+        "wishlistCount": 16,
+        "url": "/shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_7762.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Eberjey",
+        "nameInEnglish": "Fine Gauge Sweater Tank in Cotton Blend",
+        "categoryUrl": "",
+        "colorInEnglish": "Neutral",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Loungewear",
+        "subClass": "Lounge Tops",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217843047_beige_fr.jpg?ts=1740561311.1041",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 675,
+        "colors": [
+          {
+            "styleColorId": "217843047_7762",
+            "url": "/shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_7762.html",
+            "hex": "#c7c0b3",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217843047_beige_in.jpg?ts=1740561311.1041"
+          },
+          {
+            "styleColorId": "217843047_14",
+            "url": "/shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_14.html",
+            "hex": "#000064",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217843047_blue_in.jpg?ts=1740561311.1041"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218160417_2709",
+        "slug": "shop-alexander-wang-t-logo-sweatpants-in-cotton-terry-for-women-218160417_2709",
+        "designerCategoryName": "Alexander Wang.t",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218160417_blk_in.jpg?ts=1741185942.8579",
+        "name": "Logo Sweatpants in Cotton Terry",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218160417",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-alexander-wang-t-logo-sweatpants-in-cotton-terry-for-women-218160417_2709.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Alexander Wang.t",
+        "nameInEnglish": "Logo Sweatpants in Cotton Terry",
+        "categoryUrl": "",
+        "colorInEnglish": "Black",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Trousers",
+        "subClass": "Sweatpants",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218160417_blk_fr.jpg?ts=1741185942.8579",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1305,
+        "colors": [
+          {
+            "styleColorId": "218160417_191",
+            "url": "/shop-alexander-wang-t-logo-sweatpants-in-cotton-terry-for-women-218160417_191.html",
+            "hex": "#c7c0b3",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218160417_offwhite_in.jpg?ts=1741185942.8579"
+          },
+          {
+            "styleColorId": "218160417_2709",
+            "url": "/shop-alexander-wang-t-logo-sweatpants-in-cotton-terry-for-women-218160417_2709.html",
+            "hex": "#000000",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218160417_blk_in.jpg?ts=1741185942.8579"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217843047_14",
+        "slug": "shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_14",
+        "designerCategoryName": "Eberjey",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217843047_blue_in.jpg?ts=1740561317.9876",
+        "name": "Fine Gauge Sweater Tank in Cotton Blend",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "217843047",
+        "discounted": "no",
+        "wishlistCount": 5,
+        "url": "/shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_14.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Eberjey",
+        "nameInEnglish": "Fine Gauge Sweater Tank in Cotton Blend",
+        "categoryUrl": "",
+        "colorInEnglish": "Blue",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Loungewear",
+        "subClass": "Lounge Tops",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217843047_blue_fr.jpg?ts=1740561317.9876",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 675,
+        "colors": [
+          {
+            "styleColorId": "217843047_7762",
+            "url": "/shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_7762.html",
+            "hex": "#c7c0b3",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217843047_beige_in.jpg?ts=1740561317.9876"
+          },
+          {
+            "styleColorId": "217843047_14",
+            "url": "/shop-eberjey-fine-gauge-sweater-tank-in-cotton-blend-for-women-217843047_14.html",
+            "hex": "#000064",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/217843047_blue_in.jpg?ts=1740561317.9876"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "217948747_15",
+        "slug": "shop-acne-studios-logo-sweatpants-in-cotton-for-women-217948747_15",
+        "designerCategoryName": "Acne Studios",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217948747_brown_in.jpg?ts=1741091206.239",
+        "name": "Logo Sweatpants in Cotton",
+        "simpleType": "sizeOnlySimple",
+        "parentSku": "217948747",
+        "discounted": "no",
+        "wishlistCount": 1,
+        "url": "/shop-acne-studios-logo-sweatpants-in-cotton-for-women-217948747_15.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Acne Studios",
+        "nameInEnglish": "Logo Sweatpants in Cotton",
+        "categoryUrl": "",
+        "colorInEnglish": "Brown",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Trousers",
+        "subClass": "Sweatpants",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/217948747_brown_fr.jpg?ts=1741091206.239",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 1950,
+        "colors": [],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218087319_178",
+        "slug": "shop-vuori-luna-shorts-for-women-218087319_178",
+        "designerCategoryName": "Vuori",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218087319_lgr_in.jpg?ts=1741188271.2193",
+        "name": "Luna Shorts",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218087319",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-vuori-luna-shorts-for-women-218087319_178.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Vuori",
+        "nameInEnglish": "Luna Shorts",
+        "categoryUrl": "",
+        "colorInEnglish": "Green",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Activewear",
+        "subClass": "Active Shorts",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218087319_lgr_fr.jpg?ts=1741188271.2193",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 305,
+        "colors": [
+          {
+            "styleColorId": "218087319_178",
+            "url": "/shop-vuori-luna-shorts-for-women-218087319_178.html",
+            "hex": "#006400",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218087319_lgr_in.jpg?ts=1741188271.2193"
+          },
+          {
+            "styleColorId": "218087319_2709",
+            "url": "/shop-vuori-luna-shorts-in-recycled-polyester-blend-for-women-218087319_2709.html",
+            "hex": "#000000",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218087319_blk_in.jpg?ts=1741188271.2193"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      },
+      {
+        "styleColorId": "218087311_26",
+        "slug": "shop-vuori-pose-tank-top-in-modal-rayon-blend-for-women-218087311_26",
+        "designerCategoryName": "Vuori",
+        "thumbnail": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218087311_white_in.jpg?ts=1741188308.1522",
+        "name": "Pose Tank Top in Modal Rayon Blend",
+        "simpleType": "colorAndSizeSimple",
+        "parentSku": "218087311",
+        "discounted": "no",
+        "wishlistCount": 0,
+        "url": "/shop-vuori-pose-tank-top-in-modal-rayon-blend-for-women-218087311_26.html",
+        "listName": "PLP Clothing",
+        "designerCategoryEnglishName": "Vuori",
+        "nameInEnglish": "Pose Tank Top in Modal Rayon Blend",
+        "categoryUrl": "",
+        "colorInEnglish": "White",
+        "productClassInEnglish": "Clothing",
+        "division": "Fashion",
+        "group": "Womens",
+        "department": "Clothing",
+        "class": "Activewear",
+        "subClass": "Active Tanks",
+        "gender": "Womens",
+        "season": "SS 2025",
+        "exclusive": 0,
+        "isClearance": false,
+        "isPriority": false,
+        "isPromotion": false,
+        "designerPlusSubClass": "",
+        "hoverImage": "//ounass-ae.atgcdn.ae/small_light(dw=350,of=webp)/pub/media/catalog/product/2/1/218087311_white_fr.jpg?ts=1741188308.1522",
+        "badge": {
+          "id": 4,
+          "name": "badge",
+          "value": "NEW SEASON",
+          "backgroundColor": "#f2f2f2",
+          "borderColor": "#f2f2f2",
+          "fontColor": "#2d2d2d",
+          "backgroundColorDarkMode": "#2d2d2d",
+          "borderColorDarkMode": "#2d2d2d",
+          "fontColorDarkMode": "#f2f2f2"
+        },
+        "price": 240,
+        "colors": [
+          {
+            "styleColorId": "218087311_26",
+            "url": "/shop-vuori-pose-tank-top-in-modal-rayon-blend-for-women-218087311_26.html",
+            "hex": "#ffffff",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218087311_white_in.jpg?ts=1741188308.1522"
+          },
+          {
+            "styleColorId": "218087311_2709",
+            "url": "/shop-vuori-pose-tank-top-in-modal-rayon-blend-for-women-218087311_2709.html",
+            "hex": "#000000",
+            "swatchImage": "//ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/product/2/1/218087311_blk_in.jpg?ts=1741188308.1522"
+          }
+        ],
+        "sizes": [
+          {
+            "sizeCodeId": 72,
+            "sizeCode": "XS",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 74,
+            "sizeCode": "S",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 75,
+            "sizeCode": "M",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 71,
+            "sizeCode": "L",
+            "stock": 1
+          },
+          {
+            "sizeCodeId": 81,
+            "sizeCode": "XL",
+            "stock": 1
+          }
+        ],
+        "showSizeSelector": true
+      }
+    ],
+    "appliedFilters": [],
+    "noFilterUrl": "/women/clothing",
+    "quickFilters": [
+      {
+        "optionId": "9337",
+        "name": "12 STOREEZ",
+        "href": "/women/clothing?fh_location=/designer>{9337}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 208,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "1783",
+        "name": "16 Arlington",
+        "href": "/women/clothing?fh_location=/designer>{1783}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 16,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "11555",
+        "name": "21SIX",
+        "href": "/women/clothing?fh_location=/designer>{11555}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 13,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "294",
+        "name": "3.1 Phillip Lim",
+        "href": "/women/clothing?fh_location=/designer>{294}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 46,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "5485",
+        "name": "7 DAYS ACTIVE",
+        "href": "/women/clothing?fh_location=/designer>{5485}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 4,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "6724",
+        "name": "A.W.A.K.E Mode",
+        "href": "/women/clothing?fh_location=/designer>{6724}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 20,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "4365",
+        "name": "Aanchal Chanda",
+        "href": "/women/clothing?fh_location=/designer>{4365}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 9,
+        "facetName": "designerCategoryName"
+      },
+      {
+        "optionId": "5585",
+        "name": "AC by Aanchal Chanda",
+        "href": "/women/clothing?fh_location=/designer>{5585}",
+        "rel": "noindex nofollow",
+        "numberOfStyleColors": 46,
+        "facetName": "designerCategoryName"
+      }
+    ],
+    "showSeeAllDesignersButton": true,
+    "feedbackFrom": {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdzOxO2VlExM-HTcVrFJkdj3t7uiC9dUkBEs0EMkkRHzq5-Iw/formResponse",
+      "ratingId": "entry.650774054",
+      "commentId": "entry.1850485708"
+    },
+    "semanticSearch": {
+      "searchMode": "FH"
+    }
+  },
+  "gaListName": "PLP Clothing",
+  "categoryIdFacetPath": null,
+  "categoryUrl": "women/clothing",
+  "department": "women",
+  "designerName": "Default Category",
+  "designerCategoryUrl": null
+}

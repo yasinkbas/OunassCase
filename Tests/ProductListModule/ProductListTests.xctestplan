@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "2ACABE85-17EA-41A8-9BE2-90FBC028DD32",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:OunassCase.xcodeproj",
+      "identifier" : "457776AD27CE879A9CF3338F",
+      "name" : "ProductListTests"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:OunassCase.xcodeproj",
+        "identifier" : "457776AD27CE879A9CF3338F",
+        "name" : "ProductListTests"
+      }
+    }
+  ],
+  "version" : 1
+}
