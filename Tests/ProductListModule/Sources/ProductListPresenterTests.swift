@@ -120,7 +120,25 @@ final class ProductListPresenterTests: XCTestCase {
         XCTAssertEqual(view.invokedReloadCollectionViewCount, 2)
     }
     
-    func test_collectionViewSizeForItemAt_ReturnsCorrectValue() {
+    func test_collectionViewSizeForItemAt_Potrait_ReturnsCorrectValue() {
+        deviceChecker.stubbedIsPotrait = true
+        
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 200).height, 121.6, accuracy: 0.01)
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 200).width, 76)
+        
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 400).height, 281.6, accuracy: 0.01)
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 400).width, 176)
+        
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 600).height, 441.6, accuracy: 0.01)
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 600).width, 276)
+        
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 800).height, 601.6, accuracy: 0.01)
+        XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 800).width, 376)
+    }
+    
+    func test_collectionViewSizeForItemAt_Landscape_ReturnsCorrectValue() {
+        deviceChecker.stubbedIsPotrait = false
+        
         XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 200).height, 48)
         XCTAssertEqual(presenter.collectionViewSizeForItemAt(viewWidth: 200).width, 30)
         
