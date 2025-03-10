@@ -25,7 +25,6 @@ final class ProductListInteractor {
 extension ProductListInteractor: ProductListInteractorInterface { 
     func fetchProducts(for startIndex: Int) async -> ProductListBaseAPIResponse<ProductListResponse>? {
         guard let output else { return nil }
-        print("--> request started \(startIndex)")
         return await ProductListEndpoint()
             .getList(for: String(startIndex))
             .onError(output.handleRequestError(error:))

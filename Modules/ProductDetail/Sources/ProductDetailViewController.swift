@@ -1,16 +1,28 @@
 //
 //  ProductDetailViewController.swift
-//  OunassCase
+//  ProductDetail
 //
-//  Created by Yasin Akbas on 4.03.2025.
+//  Created by Yasin Akbas on 10.03.2025.
 //
 
 import UIKit
 
-public class ProductDetailViewController: UIViewController {
-    public override func viewDidLoad() {
+protocol ProductDetailViewInterface: AnyObject {
+    func prepareUI()
+}
+
+class ProductDetailViewController: UIViewController {
+    var presenter: ProductDetailPresenterInterface!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        title = "Product Detail"
+        presenter.viewDidLoad()
+    }
+}
+
+// MARK: - ProductDetailViewInterface
+extension ProductDetailViewController: ProductDetailViewInterface { 
+    func prepareUI() { 
+    
     }
 }
