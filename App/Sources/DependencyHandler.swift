@@ -6,8 +6,8 @@
 //
 
 import DependencyManagerKit
-import ProductList
-import ProductDetail
+import ProductListModule
+import ProductDetailModule
 import CommonKit
 
 final class DependencyHandler {

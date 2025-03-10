@@ -16,8 +16,8 @@ targets:
     sources:
       - path: App
     dependencies:
-      - target: ProductList
-      - target: ProductDetail
+      - target: ProductListModule
+      - target: ProductDetailModule
       - target: CommonKit
       - target: DependencyManagerKit
       - target: NetworkManagerKit
@@ -72,11 +72,11 @@ targets:
         INFOPLIST_FILE: "Kits/NetworkManagerKit/Resources/Info.plist"
 
 # Modules
-  ProductList:
+  ProductListModule:
     type: framework
     platform: iOS
     sources:
-      - path: Modules/ProductList
+      - path: Modules/ProductListModule
         group: Modules/
     dependencies:
       - target: NetworkManagerKit
@@ -87,8 +87,8 @@ targets:
       - package: SDWebImage
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductList
-        INFOPLIST_FILE: "Modules/ProductList/Resources/Info.plist"
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductListModule
+        INFOPLIST_FILE: "Modules/ProductListModule/Resources/Info.plist"
     scheme:
       gatherCoverageData: true
       testTargets:
@@ -96,7 +96,7 @@ targets:
           parallelizable: true
           randomExecutionOrder: true
     
-  ProductListTests:
+  ProductListModuleTests:
     type: bundle.unit-test
     platform: iOS
     sources:
@@ -106,7 +106,7 @@ targets:
       - path: Tests/ProductListModule/Resources
         group: Tests/
     dependencies:
-      - target: ProductList
+      - target: ProductListModule
     settings:
       base:
         INFOPLIST_FILE: "Tests/ProductListModule/Info.plist"
@@ -114,18 +114,18 @@ targets:
       testPlans:
         - path: Tests/ProductListModule/ProductListTests.xctestplan
 
-  ProductDetail:
+  ProductDetailModule:
     type: framework
     platform: iOS
     sources:
-      - path: Modules/ProductDetail
+      - path: Modules/ProductDetailModule
         group: Modules/
     dependencies:
       - package: UILab
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductDetail
-        INFOPLIST_FILE: "Modules/ProductDetail/Resources/Info.plist"
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductDetailModule
+        INFOPLIST_FILE: "Modules/ProductDetailModule/Resources/Info.plist"
 
 # 3rd parties
 packages:
