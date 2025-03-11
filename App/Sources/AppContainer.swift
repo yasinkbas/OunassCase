@@ -25,7 +25,7 @@ final class AppContainer {
         DependencyHandler().registerDependencies()
     }
     
-    func prepareUILab() {
+    private func prepareUILab() {
         UILab.Settings.debugMonitoringType = .verbose
     }
 }
