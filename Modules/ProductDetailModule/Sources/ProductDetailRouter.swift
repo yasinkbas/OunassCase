@@ -6,26 +6,32 @@
 //
 
 import UIKit
+import DependencyManagerKit
 
 protocol ProductDetailRouterInterface: AnyObject {
-    
+    func dismiss()
 }
 
 final class ProductDetailRouter {
-    private weak var navigationController: UINavigationController?
+    private weak var view: UIViewController?
+    @Dependency private var productListModule: ProductListModuleInterface
     
-    init(with navigationController: UINavigationController?) {
-        self.navigationController = navigationController
+    init(view: UIViewController) {
+        self.view = view
     }
 
-    static func createModule(using navigationController: UINavigationController? = nil) -> ProductDetailViewController { 
+    static func createModule(using navigationController: UINavigationController? = nil, with arguments: ProductDetailArguments) -> ProductDetailViewController {
         let view = ProductDetailViewController()
         let interactor = ProductDetailInteractor()
-        let router = ProductDetailRouter(with: navigationController)
-        let presenter = ProductDetailPresenter(view: view, router: router, interactor: interactor)
+        let router = ProductDetailRouter(view: view)
+        let presenter = ProductDetailPresenter(view: view, router: router, interactor: interactor, arguments: arguments)
         view.presenter = presenter
         interactor.output = presenter
         return view
+    }
+    
+    func dismiss() {
+        view?.dismiss(animated: true)
     }
 }
 

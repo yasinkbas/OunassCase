@@ -14,7 +14,7 @@ public class ProductDetailModule {
 
 // MARK: - ProductDetailModuleInterface
 extension ProductDetailModule: ProductDetailModuleInterface {
-    public func productDetailViewController() -> UIViewController {
-        ProductDetailRouter.createModule()
+    public func productDetailViewController(arguments: ProductDetailModuleArguments) -> UIViewController {
+        ProductDetailRouter.createModule(with: .init(slug: arguments.slug, image: arguments.imageUrl))
     }
 }

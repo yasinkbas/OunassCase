@@ -7,7 +7,8 @@
 
 import UIKit
 import UILab
-import CommonKit
+import CommonViewKit
+import DependencyManagerKit
 
 protocol ProductListViewInterface: AnyObject {
     func prepareUI()
@@ -39,6 +40,8 @@ final class ProductListViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(cellType: ProductCell.self, bundle: .main)
+        collectionView.verboseName = "collectionView"
+        collectionView.accessibilityIdentifier = "collectionView"
         return collectionView
     }()
     
@@ -50,6 +53,16 @@ final class ProductListViewController: UIViewController {
         Task {
             await presenter.viewDidLoad()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.viewWillAppear()
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -93,7 +106,13 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.collectionViewDidSelectItem(indexPath: indexPath)
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ProductCell else { return }
+
+        let cellImageView = cell.imageView
+        let selectedCellFrame = collectionView.convert(cell.frame, to: collectionView.superview)
+        let imageFrame = CGRect(x: selectedCellFrame.origin.x, y: selectedCellFrame.origin.y, width: selectedCellFrame.width, height: selectedCellFrame.height - 40) // TODO:
+        
+        presenter.collectionViewDidSelectItem(indexPath: indexPath, transitionArguments: .init(selectedCellFrame: imageFrame, selectedImageView: cellImageView))
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

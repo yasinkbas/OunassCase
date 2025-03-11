@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UILab
 import NetworkManagerKit
 
 final class AppContainer {
@@ -16,6 +17,15 @@ final class AppContainer {
         self.window = window
         router = AppRouter(window: window)
         
+        registerDependencies()
+        prepareUILab()
+    }
+    
+    private func registerDependencies() {
         DependencyHandler().registerDependencies()
+    }
+    
+    func prepareUILab() {
+        UILab.Settings.debugMonitoringType = .verbose
     }
 }

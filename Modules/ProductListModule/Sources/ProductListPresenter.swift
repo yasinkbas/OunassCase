@@ -6,13 +6,14 @@
 //
 
 import Foundation
-import protocol CommonKit.DeviceCheckerInterface
+import CommonKit
 
 protocol ProductListPresenterInterface: AnyObject {
     func viewDidLoad() async
+    func viewWillAppear()
     func numberOfItemsInSection() -> Int
     func productCellArguments(for indexPath: IndexPath) -> ProductCellArguments
-    func collectionViewDidSelectItem(indexPath: IndexPath)
+    func collectionViewDidSelectItem(indexPath: IndexPath, transitionArguments: ProductListToDetailTransitionArguments)
     func collectionViewWillDisplay(indexPath: IndexPath) async
     func collectionViewSizeForItemAt(viewWidth: Double) -> (width: Double, height: Double)
 }
@@ -55,8 +56,8 @@ final class ProductListPresenter: @unchecked Sendable {
         isFetching = true
         let data = await interactor.fetchProducts(for: startIndex)
         isFetching = false
-        pagination = data?.result?.pagination
-        productList.append(contentsOf: data?.result?.styleColors ?? [])
+        pagination = data?.plpResult?.pagination
+        productList.append(contentsOf: data?.plpResult?.styleColors ?? [])
     }
 }
 
@@ -68,17 +69,24 @@ extension ProductListPresenter: ProductListPresenterInterface {
         view?.reloadCollectionView()
     }
     
+    func viewWillAppear() {
+        // pre-renders the collection view to prevent a black screen during dismissal in landscape mode
+        view?.reloadCollectionView()
+        
+    }
+    
     func numberOfItemsInSection() -> Int {
         productList.count
     }
     
     func productCellArguments(for indexPath: IndexPath) -> ProductCellArguments {
         let product = productList[indexPath.item]
-        return .init(productName: product.name, thumbnailImage: product.thumbnail)
+        return .init(productName: product.name, thumbnailImage: "https:\(product.thumbnail ?? "")")
     }
     
-    func collectionViewDidSelectItem(indexPath: IndexPath) {
-        // TODO: move detail
+    func collectionViewDidSelectItem(indexPath: IndexPath, transitionArguments: ProductListToDetailTransitionArguments) {
+        guard let product = productList[safe: indexPath.item], let image = product.thumbnail, let slug = product.slug else { return }
+        router.routeToDetail(detailArguments: .init(imageUrl: image, slug: slug), transitionArguments: transitionArguments)
     }
     
     @MainActor func collectionViewWillDisplay(indexPath: IndexPath) async {

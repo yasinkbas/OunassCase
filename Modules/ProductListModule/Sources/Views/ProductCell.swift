@@ -32,7 +32,7 @@ struct ProductCellArguments {
 }
 
 final class ProductCell: UICollectionViewCell {    
-    private lazy var imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         return imageView
@@ -46,7 +46,7 @@ final class ProductCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var verticalStackView: UIStackView = {
+    lazy var containerView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [imageView, nameLabel])
         stackView.axis = .vertical
         stackView.alignment = .center
@@ -70,26 +70,16 @@ final class ProductCell: UICollectionViewCell {
         contentView.layer.borderColor = Constants.borderColor.cgColor
         contentView.layer.masksToBounds = true
         
-        contentView.addSubview(verticalStackView)
-        verticalStackView.set(.topOf(contentView, 8), .leadingOf(contentView, 8), .trailingOf(contentView, 8), .bottomOf(contentView, 8))
+        contentView.addSubview(containerView)
+        containerView.set(.topOf(contentView, 8), .leadingOf(contentView, 8), .trailingOf(contentView, 8), .bottomOf(contentView, 8))
         imageView.set(.height(200), .width(150))
     }
 
     func configure(with arguments: ProductCellArguments) {
         nameLabel.text = arguments.productName
         
-        if let imageUrl = arguments.thumbnailImage, let url = URL(string: "https:\(imageUrl)") {
-            loadImage(from: url)
-        }
-    }
-
-    private func loadImage(from url: URL) {
-        imageView.sd_setImage(with: url) { [weak self] image, error, _, _ in
-            guard let self else { return }
-            if let error {
-                print("--> error \(error)")
-            }
-            self.imageView.image = image
+        if let imageUrl = arguments.thumbnailImage {
+            imageView.loadImage(from: imageUrl)
         }
     }
 }

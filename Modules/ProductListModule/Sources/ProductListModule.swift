@@ -9,12 +9,14 @@ import UIKit
 import DependencyManagerKit
 
 public class ProductListModule {
+    var controller: ProductListViewController? = nil
     public init() {}
 }
 
 // MARK: - ProductListModuleInterface
 extension ProductListModule: ProductListModuleInterface {
     public func productListViewController(usedNavigationController navigationController: UINavigationController?) -> UIViewController {
-        ProductListRouter.createModule()
+        controller = ProductListRouter.createModule()
+        return controller!
     }
 }

@@ -11,7 +11,8 @@ public struct ProductListBaseAPIResponse<Result: Decodable>: Decodable {
     public let deepLink: String?
     public let department: String?
     public let categoryUrl: String?
-    public let result: Result?
+    public let plpResult: Result?
+    public let pdpResult: Result?
     
     enum CodingKeys: String, CodingKey {
         case routeType
@@ -19,6 +20,7 @@ public struct ProductListBaseAPIResponse<Result: Decodable>: Decodable {
         case deepLink
         case department
         case categoryUrl
-        case result = "plp"
+        case plpResult = "plp"
+        case pdpResult = "pdp" // TODO:
     }
 }
