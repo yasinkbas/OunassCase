@@ -17,9 +17,3 @@ public class NetworkClientHandler {
         NLClient(baseURL: baseUrl, session: .shared)
     }
 }
-
-public extension NLTaskPoint {
-    func injectSomething() -> Self {
-        addParameter(.init(name: "", value: "")) // TODO: think to implement
-    }
-}

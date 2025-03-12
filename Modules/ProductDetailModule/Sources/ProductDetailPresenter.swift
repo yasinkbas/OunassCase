@@ -12,6 +12,7 @@ protocol ProductDetailPresenterInterface: AnyObject {
     @MainActor func viewDidLoad() async
     func didTapBackButton()
     func didTapAddToCartButton()
+    func didTapBasketButton()
 }
 
 struct ProductDetailArguments {
@@ -71,6 +72,10 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
     func didTapAddToCartButton() {
         // basketManagerKit
         // basketModule
+    }
+    
+    func didTapBasketButton() {
+        // route to basket screen ? TODO: think to create screen for that
     }
 }
 

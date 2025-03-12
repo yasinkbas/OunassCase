@@ -18,5 +18,5 @@ public struct ProductDetailModuleArguments {
 }
 
 public protocol ProductDetailModuleInterface: AnyObject {
-    func productDetailViewController(arguments: ProductDetailModuleArguments) -> UIViewController
+    func productDetailViewController(using navigationController: UINavigationController, arguments: ProductDetailModuleArguments) -> UIViewController
 }

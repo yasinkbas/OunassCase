@@ -25,7 +25,7 @@ class ProductDetailViewController: UIViewController {
         return scrollView
     }()
     
-    private lazy var contentView: UIView = {
+    private lazy var containerView: UIView = {
         let view = UIView()
         return view
     }()
@@ -66,19 +66,28 @@ class ProductDetailViewController: UIViewController {
     
     private lazy var addToBagButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .systemGray2
         button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 8
-        button.setTitle("Add to Bag", for: .normal)
+        button.layer.cornerRadius = 20
+        button.layer.masksToBounds = true
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.2
+        button.layer.shadowOffset = CGSize(width: 0, height: 4)
+        button.layer.shadowRadius = 8
+        button.setTitle("+", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.addTarget(self, action: #selector(didTapAddToBag), for: .touchUpInside)
         return button
     }()
     
-    private lazy var backButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("← Back", for: .normal)
-        button.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
-        return button
+    private lazy var bagBarButton: UIBarButtonItem = {
+        let bagBarButton = UIBarButtonItem(
+            image: UIImage(systemName: "cart"),
+            style: .plain,
+            target: self,
+            action: #selector(didTapBasketButton)
+        )
+        return bagBarButton
     }()
     
     override func viewDidLoad() {
@@ -89,40 +98,44 @@ class ProductDetailViewController: UIViewController {
         }
     }
     
-    @objc private func didTapAddToBag() {
+    @objc
+    private func didTapAddToBag() {
         presenter.didTapAddToCartButton()
     }
     
-    @objc private func didTapBack() {
+    @objc
+    private func didTapBack() {
         presenter.didTapBackButton()
+    }
+    
+    @objc
+    private func didTapBasketButton() {
+        presenter.didTapBasketButton()
     }
 }
 
 // MARK: - ProductDetailViewInterface
 extension ProductDetailViewController: ProductDetailViewInterface {
     func prepareUI() {
-        view.addSubview(backButton)
+        navigationItem.rightBarButtonItem = bagBarButton
+        
         view.addSubview(scrollView)
-        scrollView.addSubview(contentView)
+        scrollView.addSubview(containerView)
+        view.addSubview(addToBagButton)
         
-        contentView.addSubview(imageView)
-        contentView.addSubview(productNameLabel)
-        contentView.addSubview(priceLabel)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(addToBagButton)
+        containerView.addSubview(imageView)
+        containerView.addSubview(productNameLabel)
+        containerView.addSubview(priceLabel)
+        containerView.addSubview(descriptionLabel)
         
-        backButton.set(
-            .top(view.safeAreaLayoutGuide.topAnchor),
-            .leadingOf(view, 16),
-            .height(44)
-        )
+        
         scrollView.set(
-            .top(backButton.bottom),
+            .top(view.safeAreaLayoutGuide.topAnchor),
             .leadingOf(view),
             .trailingOf(view),
             .bottomOf(view)
         )
-        contentView.set(
+        containerView.set(
             .topOf(scrollView),
             .leadingOf(scrollView),
             .trailingOf(scrollView),
@@ -130,31 +143,31 @@ extension ProductDetailViewController: ProductDetailViewInterface {
             .widthOf(scrollView)
         )
         imageView.set(
-            .topOf(contentView, 16),
-            .leadingOf(contentView),
-            .trailingOf(contentView),
+            .topOf(containerView, 16),
+            .leadingOf(containerView),
+            .trailingOf(containerView),
             .heightMultiple(view.height, 0.66)
         )
         productNameLabel.set(
             .top(imageView.bottom, 16),
-            .leadingOf(contentView, 16),
-            .trailingOf(contentView, 16)
+            .leadingOf(containerView, 16),
+            .trailingOf(containerView, 16)
         )
         priceLabel.set(
             .top(productNameLabel.bottom, 8),
-            .leadingOf(contentView, 16)
+            .leadingOf(containerView, 16)
         )
         descriptionLabel.set(
             .top(priceLabel.bottom, 16),
-            .leadingOf(contentView, 16),
-            .trailingOf(contentView, 16)
+            .leadingOf(containerView, 16),
+            .trailingOf(containerView, 16),
+            .bottomOf(containerView, 16)
         )
         addToBagButton.set(
-            .top(descriptionLabel.bottom, 24),
-            .centerXOf(contentView),
-            .bottomOf(contentView, 24),
-            .width(200),
-            .height(44))
+            .bottomOf(view, 32),
+            .trailingOf(view, 16),
+            .width(40),
+            .height(40))
     }
     
     func setImageView(imageUrl: String) {

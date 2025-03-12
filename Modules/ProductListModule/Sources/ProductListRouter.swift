@@ -10,24 +10,23 @@ import DependencyManagerKit
 import CommonKit
 
 protocol ProductListRouterInterface: AnyObject {
-    func routeToDetail(detailArguments: ProductDetailModuleArguments, transitionArguments: ProductListToDetailTransitionArguments)
+    func routeToDetail(detailArguments: ProductDetailModuleArguments)
 }
 
 final class ProductListRouter {
-    private weak var view: UIViewController?
+    private weak var navigationController: UINavigationController?
     
     @Dependency private var detailModule: ProductDetailModuleInterface
-    private var detailTransitionDelegate: UIViewControllerTransitioningDelegate?
+    @Dependency private static var deviceChecker: DeviceCheckerInterface
     
-    init(with view: UIViewController?) {
-        self.view = view
+    init(with navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
 
-    static func createModule(using navigationController: UINavigationController? = nil) -> ProductListViewController { 
+    static func createModule(using navigationController: UINavigationController) -> ProductListViewController {
         let view = ProductListViewController()
         let interactor = ProductListInteractor()
-        let router = ProductListRouter(with: view)
-        let deviceChecker: DeviceChecker = DependencyEngine.shared.read(for: DeviceCheckerInterface.self)
+        let router = ProductListRouter(with: navigationController)
         let presenter = ProductListPresenter(view: view, router: router, interactor: interactor, deviceChecker: deviceChecker)
         view.presenter = presenter
         interactor.output = presenter
@@ -37,17 +36,10 @@ final class ProductListRouter {
 
 // MARK: - ProductListRouterInterface
 extension ProductListRouter: ProductListRouterInterface {
-    func routeToDetail(detailArguments: ProductDetailModuleArguments, transitionArguments: ProductListToDetailTransitionArguments) {
-        let detailViewController = detailModule.productDetailViewController(arguments: detailArguments)
-        // stored due to prevent deinitialization
-        detailTransitionDelegate = ProductListTransitioningDelegate(
-            selectedCellFrame: transitionArguments.selectedCellFrame,
-            selectedImageView: transitionArguments.selectedImageView
-        )
-        detailViewController.transitioningDelegate = detailTransitionDelegate
-        detailViewController.modalPresentationStyle = .fullScreen
-        
-        view?.present(detailViewController, animated: true)
-    }    
+    func routeToDetail(detailArguments: ProductDetailModuleArguments) {
+        guard let navigationController else { return }
+        let detailViewController = detailModule.productDetailViewController(using: navigationController, arguments: detailArguments)
+        navigationController.pushViewController(detailViewController, animated: true)
+    }
 }
 

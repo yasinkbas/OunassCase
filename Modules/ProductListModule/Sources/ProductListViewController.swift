@@ -13,6 +13,8 @@ import DependencyManagerKit
 protocol ProductListViewInterface: AnyObject {
     func prepareUI()
     func reloadCollectionView()
+    func startRefreshing()
+    func stopRefreshing()
 }
 
 private extension ProductListViewController {
@@ -40,9 +42,16 @@ final class ProductListViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(cellType: ProductCell.self, bundle: .main)
+        collectionView.refreshControl = refreshControl
         collectionView.verboseName = "collectionView"
         collectionView.accessibilityIdentifier = "collectionView"
         return collectionView
+    }()
+    
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+        return refreshControl
     }()
     
     override func viewDidLoad() {
@@ -55,19 +64,16 @@ final class ProductListViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        collectionView.collectionViewLayout.invalidateLayout()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        presenter.viewWillAppear()
-    }
-    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         collectionView.collectionViewLayout.invalidateLayout()
+    }
+    
+    @objc
+    private func didPullToRefresh() {
+        Task {
+            await presenter.didPullToRefresh()
+        }
     }
 }
 
@@ -81,6 +87,14 @@ extension ProductListViewController: ProductListViewInterface {
     func reloadCollectionView() {
         collectionView.reloadData()
     }
+    
+    func startRefreshing() {
+        collectionView.refreshControl?.beginRefreshing()
+    }
+    
+    func stopRefreshing() {
+        collectionView.refreshControl?.endRefreshing()
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -91,8 +105,9 @@ extension ProductListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(with: ProductCell.self, for: indexPath)
-        let productCellArguments = presenter.productCellArguments(for: indexPath)
-        cell.configure(with: productCellArguments)
+        if let productCellArguments = presenter.productCellArguments(for: indexPath) {
+            cell.configure(with: productCellArguments)
+        }
         return cell
     }
 }
@@ -106,13 +121,7 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? ProductCell else { return }
-
-        let cellImageView = cell.imageView
-        let selectedCellFrame = collectionView.convert(cell.frame, to: collectionView.superview)
-        let imageFrame = CGRect(x: selectedCellFrame.origin.x, y: selectedCellFrame.origin.y, width: selectedCellFrame.width, height: selectedCellFrame.height - 40) // TODO:
-        
-        presenter.collectionViewDidSelectItem(indexPath: indexPath, transitionArguments: .init(selectedCellFrame: imageFrame, selectedImageView: cellImageView))
+        presenter.collectionViewDidSelectItem(indexPath: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

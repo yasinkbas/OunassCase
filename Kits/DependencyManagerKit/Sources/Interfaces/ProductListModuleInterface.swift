@@ -8,5 +8,5 @@
 import UIKit
 
 public protocol ProductListModuleInterface: AnyObject {
-    func productListViewController(usedNavigationController: UINavigationController?) -> UIViewController
+    func productListViewController(usedNavigationController: UINavigationController) -> UIViewController
 }
