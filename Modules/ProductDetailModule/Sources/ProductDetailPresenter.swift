@@ -7,6 +7,7 @@
 
 import Foundation
 import DependencyManagerKit
+import BasketManagerKit
 
 protocol ProductDetailPresenterInterface: AnyObject {
     @MainActor func viewDidLoad() async
@@ -25,19 +26,21 @@ class ProductDetailPresenter {
     private let router: ProductDetailRouterInterface
     private let interactor: ProductDetailInteractorInterface
     private let arguments: ProductDetailArguments
+    private let basketManager: BasketManagerInterface
     private var productDetailResponse: ProductDetailResponse?
-    @Dependency private var productListModule: ProductListModuleInterface?
 
     init(
         view: ProductDetailViewInterface,
         router: ProductDetailRouterInterface,
         interactor: ProductDetailInteractorInterface,
-        arguments: ProductDetailArguments
+        arguments: ProductDetailArguments,
+        basketManager: BasketManagerInterface = BasketManager.shared
     ) {
         self.view = view
         self.router = router
         self.interactor = interactor
         self.arguments = arguments
+        self.basketManager = basketManager
     }
     
     private func fetchDetail(slug: String) async {
@@ -70,12 +73,13 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
     }
     
     func didTapAddToCartButton() {
-        // basketManagerKit
-        // basketModule
+        guard let productId = productDetailResponse?.styleColorID, let name = productDetailResponse?.name else { return }
+        let product = AddToBasketProduct(id: productId, name: name)
+        basketManager.addProduct(product)
     }
     
     func didTapBasketButton() {
-        // route to basket screen ? TODO: think to create screen for that
+        router.routeToBasket()
     }
 }
 

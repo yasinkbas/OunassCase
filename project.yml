@@ -18,10 +18,13 @@ targets:
     dependencies:
       - target: ProductListModule
       - target: ProductDetailModule
+      - target: BasketListModule
+
       - target: CommonKit
       - target: CommonViewKit
       - target: DependencyManagerKit
       - target: NetworkManagerKit
+      - target: BasketManagerKit
 
       - package: NLab
       - package: UILab
@@ -85,6 +88,17 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.NetworkManagerKit
         INFOPLIST_FILE: "Kits/NetworkManagerKit/Resources/Info.plist"
+  
+  BasketManagerKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Kits/BasketManagerKit
+        group: Kits/
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.BasketManagerKit
+        INFOPLIST_FILE: "Kits/BasketManagerKit/Resources/Info.plist"
 
 # Modules
   ProductListModule:
@@ -141,6 +155,7 @@ targets:
       - target: CommonKit
       - target: CommonViewKit
       - target: DependencyManagerKit
+      - target: BasketManagerKit
       - package: UILab
       - package: NLab
       - package: SDWebImage
@@ -148,6 +163,26 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.ProductDetailModule
         INFOPLIST_FILE: "Modules/ProductDetailModule/Resources/Info.plist"
+  
+  BasketListModule:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Modules/BasketListModule
+        group: Modules/
+    dependencies:
+      - target: NetworkManagerKit
+      - target: CommonKit
+      - target: CommonViewKit
+      - target: DependencyManagerKit
+      - target: BasketManagerKit
+      - package: UILab
+      - package: NLab
+      - package: SDWebImage
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yasinkbas.BasketListModule
+        INFOPLIST_FILE: "Modules/BasketListModule/Resources/Info.plist"
 
 # 3rd parties
 packages:
