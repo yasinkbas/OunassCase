@@ -10,6 +10,8 @@ import DependencyManagerKit
 import BasketManagerKit
 
 protocol ProductDetailPresenterInterface: AnyObject {
+    var productDetailSizeSelectionDelegate: ProductDetailSizeSelectionDelegate { get }
+    
     @MainActor func viewDidLoad() async
     func didTapBackButton()
     func didTapAddToCartButton()
@@ -28,6 +30,8 @@ class ProductDetailPresenter {
     private let arguments: ProductDetailArguments
     private let basketManager: BasketManagerInterface
     private var productDetailResponse: ProductDetailResponse?
+    
+    private var sizeSelectionModule: ProductDetailSizeSelectionModule?
 
     init(
         view: ProductDetailViewInterface,
@@ -47,15 +51,24 @@ class ProductDetailPresenter {
         let data = await interactor.fetchProductDetail(slug: slug)
         productDetailResponse = data?.pdpResult
     }
+    
+    private func prepareSizeSelectionItems() {
+        guard let sizes = productDetailResponse?.sizeGuide?.columns?.first else { return }
+        let arguments = ProductDetailSizeSelectionArguments(sizes: sizes)
+        sizeSelectionModule = view?.prepareProductDetailSizeSelectionView(arguments: arguments)
+    }
 }
 
 // MARK: - ProductDetailPresenterInterface
 extension ProductDetailPresenter: ProductDetailPresenterInterface {
+    var productDetailSizeSelectionDelegate: ProductDetailSizeSelectionDelegate { self }
+    
     @MainActor func viewDidLoad() async {
         view?.prepareUI()
         view?.setImageView(imageUrl: "https:\(arguments.image)")
         
         await fetchDetail(slug: arguments.slug)
+        prepareSizeSelectionItems()
         
         if let productName = productDetailResponse?.name {
             view?.setProductNameLabel(text: productName)
@@ -73,8 +86,10 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
     }
     
     func didTapAddToCartButton() {
-        guard let productId = productDetailResponse?.styleColorID, let name = productDetailResponse?.name else { return }
-        let product = AddToBasketProduct(id: productId, name: name)
+        guard let productId = productDetailResponse?.styleColorID,
+                let name = productDetailResponse?.name,
+                let selectedSize = sizeSelectionModule?.selectedSize else { return }
+        let product = AddToBasketProduct(id: productId, name: name, size: selectedSize)
         basketManager.addProduct(product)
     }
     
@@ -87,5 +102,11 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
 extension ProductDetailPresenter: ProductDetailInteractorOutput { 
     func handleRequestError(error: any Error) {
         print("--> error \(error)")
+    }
+}
+
+extension ProductDetailPresenter: ProductDetailSizeSelectionDelegate {
+    func didSelectSize(_ size: String) {
+        
     }
 }

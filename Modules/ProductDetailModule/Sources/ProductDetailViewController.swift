@@ -15,6 +15,8 @@ protocol ProductDetailViewInterface: AnyObject {
     func setProductNameLabel(text: String)
     func setPriceLabel(text: String)
     func setDescriptionLabel(text: String)
+    
+    func prepareProductDetailSizeSelectionView(arguments: ProductDetailSizeSelectionArguments) -> ProductDetailSizeSelectionModule
 }
 
 class ProductDetailViewController: UIViewController {
@@ -25,7 +27,17 @@ class ProductDetailViewController: UIViewController {
         return scrollView
     }()
     
-    private lazy var containerView: UIView = {
+    private lazy var containerView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.alignment = .fill
+        stackView.layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        stackView.isLayoutMarginsRelativeArrangement = true
+        return stackView
+    }()
+
+    private lazy var sizeSelectionContainerView: UIView = {
         let view = UIView()
         return view
     }()
@@ -123,11 +135,11 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         scrollView.addSubview(containerView)
         view.addSubview(addToBagButton)
         
-        containerView.addSubview(imageView)
-        containerView.addSubview(productNameLabel)
-        containerView.addSubview(priceLabel)
-        containerView.addSubview(descriptionLabel)
-        
+        containerView.addArrangedSubview(imageView)
+        containerView.addArrangedSubview(productNameLabel)
+        containerView.addArrangedSubview(sizeSelectionContainerView)
+        containerView.addArrangedSubview(priceLabel)
+        containerView.addArrangedSubview(descriptionLabel)
         
         scrollView.set(
             .top(view.safeAreaLayoutGuide.topAnchor),
@@ -135,6 +147,7 @@ extension ProductDetailViewController: ProductDetailViewInterface {
             .trailingOf(view),
             .bottomOf(view)
         )
+        
         containerView.set(
             .topOf(scrollView),
             .leadingOf(scrollView),
@@ -142,32 +155,13 @@ extension ProductDetailViewController: ProductDetailViewInterface {
             .bottomOf(scrollView),
             .widthOf(scrollView)
         )
-        imageView.set(
-            .topOf(containerView, 16),
-            .leadingOf(containerView),
-            .trailingOf(containerView),
-            .heightMultiple(view.height, 0.66)
-        )
-        productNameLabel.set(
-            .top(imageView.bottom, 16),
-            .leadingOf(containerView, 16),
-            .trailingOf(containerView, 16)
-        )
-        priceLabel.set(
-            .top(productNameLabel.bottom, 8),
-            .leadingOf(containerView, 16)
-        )
-        descriptionLabel.set(
-            .top(priceLabel.bottom, 16),
-            .leadingOf(containerView, 16),
-            .trailingOf(containerView, 16),
-            .bottomOf(containerView, 16)
-        )
+        
         addToBagButton.set(
             .bottomOf(view, 32),
             .trailingOf(view, 16),
             .width(40),
-            .height(40))
+            .height(40)
+        )
     }
     
     func setImageView(imageUrl: String) {
@@ -188,5 +182,11 @@ extension ProductDetailViewController: ProductDetailViewInterface {
     func setDescriptionLabel(text: String) {
         descriptionLabel.text = text
         descriptionLabel.isHidden = false
+    }
+    
+    func prepareProductDetailSizeSelectionView(arguments: ProductDetailSizeSelectionArguments) -> ProductDetailSizeSelectionModule {
+        let (productDetailSizeSelectionView, productDetailSizeSelectionModule) = ProductDetailSizeSelectionRouter.createModule(delegate: presenter.productDetailSizeSelectionDelegate, arguments: arguments)
+        embed(productDetailSizeSelectionView, in: sizeSelectionContainerView)
+        return productDetailSizeSelectionModule
     }
 }

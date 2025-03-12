@@ -10,9 +10,11 @@ import Foundation
 public struct AddToBasketProduct {
     let id: String
     public let name: String
+    public let size: String
     
-    public init(id: String, name: String) {
+    public init(id: String, name: String, size: String) {
         self.id = id
         self.name = name
+        self.size = size
     }
 }

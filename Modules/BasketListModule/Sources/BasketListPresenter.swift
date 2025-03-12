@@ -46,8 +46,8 @@ extension BasketListPresenter: BasketListPresenterInterface {
     }
     
     func productName(at indexPath: IndexPath) -> String? {
-        let product = basketManager.getAllProducts()[safe: indexPath.item]
-        return product?.name
+        guard let product = basketManager.getAllProducts()[safe: indexPath.item] else { return nil }
+        return "\(product.name) - \(product.size)"
     }
 }
 

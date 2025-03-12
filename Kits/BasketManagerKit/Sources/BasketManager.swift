@@ -10,7 +10,7 @@ import Foundation
 public protocol BasketManagerInterface: AnyObject {
     func addProduct(_ product: AddToBasketProduct)
     func removeProduct(with id: String)
-    func isInBasket(productId: String) -> Bool
+    func isInBasket(productId: String, size: String) -> Bool
     func getAllProducts() -> [AddToBasketProduct]
 }
 
@@ -22,7 +22,7 @@ public class BasketManager: BasketManagerInterface {
     private init() {}
 
     public func addProduct(_ product: AddToBasketProduct) {
-        guard !isInBasket(productId: product.id) else { return }
+        guard !isInBasket(productId: product.id, size: product.size) else { return }
         products.append(product)
     }
 
@@ -30,8 +30,8 @@ public class BasketManager: BasketManagerInterface {
         products.removeAll { $0.id == id }
     }
 
-    public func isInBasket(productId: String) -> Bool {
-        products.contains { $0.id == productId }
+    public func isInBasket(productId: String, size: String) -> Bool {
+        products.contains { $0.id == productId && $0.size == size }
     }
 
     public func getAllProducts() -> [AddToBasketProduct] {
