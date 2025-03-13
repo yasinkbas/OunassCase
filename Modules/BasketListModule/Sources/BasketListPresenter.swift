@@ -32,6 +32,12 @@ class BasketListPresenter {
         self.interactor = interactor
         self.basketManager = basketManager
     }
+    
+    private func checkBasketIsEmpty() {
+        if basketManager.getAllProducts().count == 0 {
+            view?.showEmptyView()
+        }
+    }
 }
 
 // MARK: - BasketListPresenterInterface
@@ -39,6 +45,7 @@ extension BasketListPresenter: BasketListPresenterInterface {
     func viewDidLoad() {
         view?.prepareUI()
         view?.reloadTableView()
+        checkBasketIsEmpty()
     }
     
     func numberOfRowsInSection() -> Int {

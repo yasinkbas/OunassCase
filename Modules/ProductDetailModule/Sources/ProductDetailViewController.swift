@@ -13,7 +13,7 @@ enum AddToBasketButtonState {
     case addable, unaddable
 }
 
-protocol ProductDetailViewInterface: AnyObject {
+protocol ProductDetailViewInterface: LoadingShowable, AlertShowable {
     func prepareUI()
     func setImageView(imageUrl: String)
     func setProductNameLabel(text: String)
@@ -197,7 +197,7 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         switch state {
         case .addable:
             addToBasketButton.setTitle("+", for: .normal)
-            addToBasketButton.backgroundColor = .systemGray2
+            addToBasketButton.backgroundColor = .systemGreen
         case .unaddable:
             addToBasketButton.setTitle("-", for: .normal)
             addToBasketButton.backgroundColor = .systemRed

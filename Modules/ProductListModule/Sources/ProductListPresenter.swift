@@ -35,7 +35,6 @@ final class ProductListPresenter: @unchecked Sendable {
     
     private var productList: [StyleColor] = []
     private var pagination: Pagination?
-    private var isFetching: Bool = false
     
     init(view: ProductListViewInterface,
          router: ProductListRouterInterface,
@@ -47,15 +46,22 @@ final class ProductListPresenter: @unchecked Sendable {
         self.deviceChecker = deviceChecker
     }
     
+    private func checkListEmpty() {
+        productList.isEmpty
+        ? view?.showEmptyView()
+        : view?.hideEmptyView()
+    }
+    
+    @MainActor
     private func fetchProducts(for pageHref: String?) async {
         var startIndex: Int = .zero
         if let pageHref {
             let components = URLComponents(string: pageHref)
             startIndex = Int(components?.queryItems?.first(where: { $0.name == "fh_start_index" })?.value ?? "0") ?? .zero // TODO: think about moving into interactor
         }
-        isFetching = true
+        view?.showLoading()
         let data = await interactor.fetchProducts(for: startIndex)
-        isFetching = false
+        view?.hideLoading()
         pagination = data?.plpResult?.pagination
         productList.append(contentsOf: data?.plpResult?.styleColors ?? [])
     }
@@ -63,16 +69,20 @@ final class ProductListPresenter: @unchecked Sendable {
 
 // MARK: - ProductListPresenterInterface
 extension ProductListPresenter: ProductListPresenterInterface {
-    @MainActor func viewDidLoad() async {
+    @MainActor
+    func viewDidLoad() async {
         view?.prepareUI()
         await fetchProducts(for: nil)
+        checkListEmpty()
         view?.reloadCollectionView()
     }
     
-    @MainActor func didPullToRefresh() async {
+    @MainActor
+    func didPullToRefresh() async {
         view?.startRefreshing()
         productList.removeAll(keepingCapacity: true)
         await fetchProducts(for: nil)
+        checkListEmpty()
         view?.stopRefreshing()
         view?.reloadCollectionView()
     }
@@ -91,7 +101,7 @@ extension ProductListPresenter: ProductListPresenterInterface {
         router.routeToDetail(detailArguments: .init(imageUrl: image, slug: slug))
     }
     
-    @MainActor func collectionViewWillDisplay(indexPath: IndexPath) async {
+    func collectionViewWillDisplay(indexPath: IndexPath) async {
         if let nextPageHref = pagination?.nextPage?.href,
         indexPath.item == productList.count - 1 {
             await fetchProducts(for: nextPageHref)
@@ -114,7 +124,6 @@ extension ProductListPresenter: ProductListPresenterInterface {
 // MARK: - ProductListInteractorOutput
 extension ProductListPresenter: ProductListInteractorOutput {
     func handleRequestError(error: any Error) {
-        print("--> error \(error)")
-        isFetching = false
+        view?.showAlert(message: error.localizedDescription)
     }
 }

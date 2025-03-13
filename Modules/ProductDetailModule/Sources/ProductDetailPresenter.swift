@@ -78,7 +78,10 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
         view?.prepareUI()
         view?.setImageView(imageUrl: "https:\(arguments.image)")
         
+        view?.showLoading()
         await fetchDetail(slug: arguments.slug)
+        view?.hideLoading()
+        
         prepareSizeSelectionItems()
         updateAddToBasketButtonState()
         
@@ -119,7 +122,7 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
 // MARK: - ProductDetailInteractorOutput
 extension ProductDetailPresenter: ProductDetailInteractorOutput {
     func handleRequestError(error: any Error) {
-        print("--> error \(error)")
+        view?.showAlert(message: error.localizedDescription)
     }
 }
 

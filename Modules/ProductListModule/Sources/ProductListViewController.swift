@@ -10,7 +10,7 @@ import UILab
 import CommonViewKit
 import DependencyManagerKit
 
-protocol ProductListViewInterface: AnyObject {
+protocol ProductListViewInterface: AlertShowable, LoadingShowable, EmptyViewShowable {
     func prepareUI()
     func reloadCollectionView()
     func startRefreshing()
@@ -79,6 +79,10 @@ final class ProductListViewController: UIViewController {
 
 // MARK: - ProductListViewInterface
 extension ProductListViewController: ProductListViewInterface {
+    var emptyViewArguments: CommonViewKit.EmptyViewPresenterArguments {
+        .init(message: "There is an error loading products", titleColor: .black, titleFontSize: 18)
+    }
+    
     func prepareUI() {
         view.addSubview(collectionView)
         collectionView.set(.top(view.safeAreaLayoutGuide.topAnchor), .bottomOf(view), .leadingOf(view), .trailingOf(view))

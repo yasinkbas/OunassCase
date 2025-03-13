@@ -9,7 +9,7 @@ import UIKit
 import UILab
 import CommonViewKit
 
-protocol BasketListViewInterface: AnyObject {
+protocol BasketListViewInterface: EmptyViewShowable {
     func prepareUI()
     func reloadTableView()
 }
@@ -38,6 +38,10 @@ final class BasketListViewController: UIViewController {
 
 // MARK: - BasketListViewInterface
 extension BasketListViewController: BasketListViewInterface {
+    var emptyViewArguments: CommonViewKit.EmptyViewPresenterArguments {
+        .init(message: "There is no product in your basket", titleColor: .black, titleFontSize: 18)
+    }
+    
     func prepareUI() {
         view.backgroundColor = .white
         title = Constants.title
