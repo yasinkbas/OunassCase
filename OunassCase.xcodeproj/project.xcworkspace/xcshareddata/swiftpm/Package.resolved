@@ -1,0 +1,33 @@
+{
+  "originHash" : "0c632433bdda6ce5b1d59b31d59a691e80c3a06776a5a717aa2d8c9642caad50",
+  "pins" : [
+    {
+      "identity" : "nlab",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yasinkbas/NLab.git",
+      "state" : {
+        "revision" : "cb8d87bf0b0c854554e06c04ba003da7d3dd3663",
+        "version" : "1.3.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "cac9a55a3ae92478a2c95042dcc8d9695d2129ca",
+        "version" : "5.21.0"
+      }
+    },
+    {
+      "identity" : "uilab",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yasinkbas/UILab.git",
+      "state" : {
+        "revision" : "c19c59ff0ea281db8b48aca92481d9e466f76390",
+        "version" : "0.3.4"
+      }
+    }
+  ],
+  "version" : 3
+}
