@@ -55,6 +55,7 @@ extension ProductDetailSizeSelectionPresenter: ProductDetailSizeSelectionPresent
         
         view?.prepareUI()
         view?.reloadData()
+        view?.selectItem(at: IndexPath(item: .zero, section: .zero))
     }
     
     func numberOfItems() -> Int {

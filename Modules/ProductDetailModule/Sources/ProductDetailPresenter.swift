@@ -32,7 +32,7 @@ class ProductDetailPresenter {
     private var productDetailResponse: ProductDetailResponse?
     
     private var sizeSelectionModule: ProductDetailSizeSelectionModule?
-
+    
     init(
         view: ProductDetailViewInterface,
         router: ProductDetailRouterInterface,
@@ -57,6 +57,17 @@ class ProductDetailPresenter {
         let arguments = ProductDetailSizeSelectionArguments(sizes: sizes)
         sizeSelectionModule = view?.prepareProductDetailSizeSelectionView(arguments: arguments)
     }
+    
+    private func updateAddToBasketButtonState() {
+        guard let productId = productDetailResponse?.styleColorID,
+              let selectedSize = sizeSelectionModule?.selectedSize else { return }
+        
+        if basketManager.isInBasket(productId: productId, size: selectedSize) {
+            view?.updateAddToBasketButton(for: .unaddable)
+        } else {
+            view?.updateAddToBasketButton(for: .addable)
+        }
+    }
 }
 
 // MARK: - ProductDetailPresenterInterface
@@ -69,6 +80,7 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
         
         await fetchDetail(slug: arguments.slug)
         prepareSizeSelectionItems()
+        updateAddToBasketButtonState()
         
         if let productName = productDetailResponse?.name {
             view?.setProductNameLabel(text: productName)
@@ -87,10 +99,16 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
     
     func didTapAddToCartButton() {
         guard let productId = productDetailResponse?.styleColorID,
-                let name = productDetailResponse?.name,
-                let selectedSize = sizeSelectionModule?.selectedSize else { return }
+              let name = productDetailResponse?.name,
+              let selectedSize = sizeSelectionModule?.selectedSize else { return }
         let product = AddToBasketProduct(id: productId, name: name, size: selectedSize)
-        basketManager.addProduct(product)
+        if basketManager.isInBasket(productId: productId, size: selectedSize) {
+            basketManager.removeProduct(with: productId, size: selectedSize)
+        } else {
+            basketManager.addProduct(product)
+        }
+        
+        updateAddToBasketButtonState()
     }
     
     func didTapBasketButton() {
@@ -99,7 +117,7 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
 }
 
 // MARK: - ProductDetailInteractorOutput
-extension ProductDetailPresenter: ProductDetailInteractorOutput { 
+extension ProductDetailPresenter: ProductDetailInteractorOutput {
     func handleRequestError(error: any Error) {
         print("--> error \(error)")
     }
@@ -107,6 +125,6 @@ extension ProductDetailPresenter: ProductDetailInteractorOutput {
 
 extension ProductDetailPresenter: ProductDetailSizeSelectionDelegate {
     func didSelectSize(_ size: String) {
-        
+        updateAddToBasketButtonState()
     }
 }

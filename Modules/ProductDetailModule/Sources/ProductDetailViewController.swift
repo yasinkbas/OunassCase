@@ -9,12 +9,17 @@ import UIKit
 import UILab
 import CommonViewKit
 
+enum AddToBasketButtonState {
+    case addable, unaddable
+}
+
 protocol ProductDetailViewInterface: AnyObject {
     func prepareUI()
     func setImageView(imageUrl: String)
     func setProductNameLabel(text: String)
     func setPriceLabel(text: String)
     func setDescriptionLabel(text: String)
+    func updateAddToBasketButton(for state: AddToBasketButtonState)
     
     func prepareProductDetailSizeSelectionView(arguments: ProductDetailSizeSelectionArguments) -> ProductDetailSizeSelectionModule
 }
@@ -76,9 +81,8 @@ class ProductDetailViewController: UIViewController {
         return label
     }()
     
-    private lazy var addToBagButton: UIButton = {
+    private lazy var addToBasketButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = .systemGray2
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 20
         button.layer.masksToBounds = true
@@ -86,7 +90,6 @@ class ProductDetailViewController: UIViewController {
         button.layer.shadowOpacity = 0.2
         button.layer.shadowOffset = CGSize(width: 0, height: 4)
         button.layer.shadowRadius = 8
-        button.setTitle("+", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.addTarget(self, action: #selector(didTapAddToBag), for: .touchUpInside)
         return button
@@ -133,7 +136,7 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         
         view.addSubview(scrollView)
         scrollView.addSubview(containerView)
-        view.addSubview(addToBagButton)
+        view.addSubview(addToBasketButton)
         
         containerView.addArrangedSubview(imageView)
         containerView.addArrangedSubview(productNameLabel)
@@ -156,7 +159,7 @@ extension ProductDetailViewController: ProductDetailViewInterface {
             .widthOf(scrollView)
         )
         
-        addToBagButton.set(
+        addToBasketButton.set(
             .bottomOf(view, 32),
             .trailingOf(view, 16),
             .width(40),
@@ -188,5 +191,16 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         let (productDetailSizeSelectionView, productDetailSizeSelectionModule) = ProductDetailSizeSelectionRouter.createModule(delegate: presenter.productDetailSizeSelectionDelegate, arguments: arguments)
         embed(productDetailSizeSelectionView, in: sizeSelectionContainerView)
         return productDetailSizeSelectionModule
+    }
+    
+    func updateAddToBasketButton(for state: AddToBasketButtonState) {
+        switch state {
+        case .addable:
+            addToBasketButton.setTitle("+", for: .normal)
+            addToBasketButton.backgroundColor = .systemGray2
+        case .unaddable:
+            addToBasketButton.setTitle("-", for: .normal)
+            addToBasketButton.backgroundColor = .systemRed
+        }
     }
 }
