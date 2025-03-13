@@ -17,6 +17,12 @@ protocol BasketListViewInterface: EmptyViewShowable {
 private extension BasketListViewController {
     enum Constants {
         static let title: String = "Basket"
+        
+        enum EmptyView {
+            static let message: String = "There is no product in your basket"
+            static let titleColor: UIColor = .black
+            static let fontSize: CGFloat = 18
+        }
     }
 }
 
@@ -39,7 +45,11 @@ final class BasketListViewController: UIViewController {
 // MARK: - BasketListViewInterface
 extension BasketListViewController: BasketListViewInterface {
     var emptyViewArguments: CommonViewKit.EmptyViewPresenterArguments {
-        .init(message: "There is no product in your basket", titleColor: .black, titleFontSize: 18)
+        .init(
+            message: Constants.EmptyView.message,
+            titleColor: Constants.EmptyView.titleColor,
+            titleFontSize: Constants.EmptyView.fontSize
+        )
     }
     
     func prepareUI() {
@@ -68,6 +78,7 @@ extension BasketListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: UITableViewCell.self, for: indexPath)
         cell.textLabel?.text = presenter.productName(at: indexPath)
+        cell.selectionStyle = .none
         return cell
     }
 }

@@ -12,7 +12,8 @@ import BasketManagerKit
 protocol ProductDetailPresenterInterface: AnyObject {
     var productDetailSizeSelectionDelegate: ProductDetailSizeSelectionDelegate { get }
     
-    @MainActor func viewDidLoad() async
+    func viewDidLoad() async
+    func viewWillAppear()
     func didTapBackButton()
     func didTapAddToCartButton()
     func didTapBasketButton()
@@ -23,7 +24,7 @@ struct ProductDetailArguments {
     let image: String
 }
 
-class ProductDetailPresenter {
+final class ProductDetailPresenter {
     private weak var view: ProductDetailViewInterface?
     private let router: ProductDetailRouterInterface
     private let interactor: ProductDetailInteractorInterface
@@ -32,6 +33,7 @@ class ProductDetailPresenter {
     private var productDetailResponse: ProductDetailResponse?
     
     private var sizeSelectionModule: ProductDetailSizeSelectionModule?
+    private var imageSliderModule: ProductDetailImageSliderModule?
     
     init(
         view: ProductDetailViewInterface,
@@ -53,9 +55,18 @@ class ProductDetailPresenter {
     }
     
     private func prepareSizeSelectionItems() {
-        guard let sizes = productDetailResponse?.sizeGuide?.columns?.first else { return }
+        guard var sizes = productDetailResponse?.sizeGuide?.columns?.first else { return }
+        sizes.removeFirst() // remove first item like generic/uk etc
         let arguments = ProductDetailSizeSelectionArguments(sizes: sizes)
         sizeSelectionModule = view?.prepareProductDetailSizeSelectionView(arguments: arguments)
+    }
+    
+    private func prepareImageSliderItems() {
+//        guard let media = productDetailResponse?.media else { return }
+//        let imageUrls = media.compactMap(\.src).map { "https://ounass-ae.atgcdn.ae/small_light(dw=120,of=webp)/pub/media/catalog/\($0)" }
+        let imageUrls = ["https:\(arguments.image)"]
+        let arguments = ProductDetailImageSliderArguments(imageUrls: imageUrls)
+        imageSliderModule = view?.prepareProductDetailImageSliderView(arguments: arguments)
     }
     
     private func updateAddToBasketButtonState() {
@@ -74,15 +85,16 @@ class ProductDetailPresenter {
 extension ProductDetailPresenter: ProductDetailPresenterInterface {
     var productDetailSizeSelectionDelegate: ProductDetailSizeSelectionDelegate { self }
     
-    @MainActor func viewDidLoad() async {
+    @MainActor
+    func viewDidLoad() async {
         view?.prepareUI()
-        view?.setImageView(imageUrl: "https:\(arguments.image)")
         
         view?.showLoading()
         await fetchDetail(slug: arguments.slug)
         view?.hideLoading()
         
         prepareSizeSelectionItems()
+        prepareImageSliderItems()
         updateAddToBasketButtonState()
         
         if let productName = productDetailResponse?.name {
@@ -94,6 +106,10 @@ extension ProductDetailPresenter: ProductDetailPresenterInterface {
         if let description = productDetailResponse?.descriptionText {
             view?.setDescriptionLabel(text: description)
         }
+    }
+    
+    func viewWillAppear() {
+        view?.prepareNavigationBar()
     }
     
     func didTapBackButton() {
@@ -126,8 +142,9 @@ extension ProductDetailPresenter: ProductDetailInteractorOutput {
     }
 }
 
+// MARK: - ProductDetailSizeSelectionDelegate
 extension ProductDetailPresenter: ProductDetailSizeSelectionDelegate {
-    func didSelectSize(_ size: String) {
+    func productDetailSizeSelectionDidSelectSize(_ size: String) {
         updateAddToBasketButtonState()
     }
 }

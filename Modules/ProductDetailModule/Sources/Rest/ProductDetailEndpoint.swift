@@ -11,9 +11,6 @@ import NetworkManagerKit
 final class ProductDetailEndpoint {
     let client = NetworkClientHandler.client()
     
-    init() { }
-    
-
     func getDetail(slug: String) -> NLTaskDirector<ProductListBaseAPIResponse<ProductDetailResponse>, Empty> {
         NLTaskPoint(client: client)
             .path("/api/v2/\(slug).html")

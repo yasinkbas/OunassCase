@@ -8,6 +8,7 @@
 @testable import CommonKit
 
 final class MockDeviceChecker: DeviceCheckerInterface {
+
     var invokedIsPotraitGetter = false
     var invokedIsPotraitGetterCount = 0
     var stubbedIsPotrait: Bool! = false

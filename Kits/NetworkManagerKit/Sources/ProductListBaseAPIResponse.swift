@@ -21,6 +21,6 @@ public struct ProductListBaseAPIResponse<Result: Decodable>: Decodable {
         case department
         case categoryUrl
         case plpResult = "plp"
-        case pdpResult = "pdp" // TODO:
+        case pdpResult = "pdp"
     }
 }

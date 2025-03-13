@@ -20,7 +20,7 @@ struct ProductDetailSizeSelectionArguments {
 }
 
 protocol ProductDetailSizeSelectionDelegate: AnyObject {
-    func didSelectSize(_ size: String)
+    func productDetailSizeSelectionDidSelectSize(_ size: String)
 }
 
 protocol ProductDetailSizeSelectionModule {
@@ -69,7 +69,7 @@ extension ProductDetailSizeSelectionPresenter: ProductDetailSizeSelectionPresent
     func didSelectSize(at indexPath: IndexPath) {
         guard let size = arguments.sizes[safe: indexPath.item] else { return }
         selectedSize = size
-        delegate?.didSelectSize(size)
+        delegate?.productDetailSizeSelectionDidSelectSize(size)
     }
 }
 

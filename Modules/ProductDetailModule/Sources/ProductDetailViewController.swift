@@ -15,16 +15,39 @@ enum AddToBasketButtonState {
 
 protocol ProductDetailViewInterface: LoadingShowable, AlertShowable {
     func prepareUI()
-    func setImageView(imageUrl: String)
+    func prepareNavigationBar()
     func setProductNameLabel(text: String)
     func setPriceLabel(text: String)
     func setDescriptionLabel(text: String)
     func updateAddToBasketButton(for state: AddToBasketButtonState)
     
     func prepareProductDetailSizeSelectionView(arguments: ProductDetailSizeSelectionArguments) -> ProductDetailSizeSelectionModule
+    func prepareProductDetailImageSliderView(arguments: ProductDetailImageSliderArguments) -> ProductDetailImageSliderModule
 }
 
-class ProductDetailViewController: UIViewController {
+private extension ProductDetailViewController {
+    enum Constants {
+        enum AddToBasketButton {
+            enum Addable {
+                static let buttonTitle: String = "+"
+                static let backgroundColor: UIColor = Colors.primary
+            }
+            enum Unaddable {
+                static let buttonTitle: String = "-"
+                static let backgroundColor: UIColor = Colors.alertRed
+            }
+            
+            static let width: CGFloat = 40
+            static let height: CGFloat = 40
+        }
+        
+        enum BasketButton {
+            static let iconName: String = "cart"
+        }
+    }
+}
+
+final class ProductDetailViewController: UIViewController {
     var presenter: ProductDetailPresenterInterface!
     
     private lazy var scrollView: UIScrollView = {
@@ -41,18 +64,10 @@ class ProductDetailViewController: UIViewController {
         stackView.isLayoutMarginsRelativeArrangement = true
         return stackView
     }()
-
-    private lazy var sizeSelectionContainerView: UIView = {
+    
+    private lazy var imageSliderContainerView: UIView = {
         let view = UIView()
         return view
-    }()
-    
-    private lazy var imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.clipsToBounds = true
-        imageView.isHidden = true
-        return imageView
     }()
     
     private lazy var productNameLabel: UILabel = {
@@ -62,6 +77,11 @@ class ProductDetailViewController: UIViewController {
         label.numberOfLines = 2
         label.isHidden = true
         return label
+    }()
+    
+    private lazy var sizeSelectionContainerView: UIView = {
+        let view = UIView()
+        return view
     }()
     
     private lazy var priceLabel: UILabel = {
@@ -97,7 +117,7 @@ class ProductDetailViewController: UIViewController {
     
     private lazy var bagBarButton: UIBarButtonItem = {
         let bagBarButton = UIBarButtonItem(
-            image: UIImage(systemName: "cart"),
+            image: UIImage(systemName: Constants.BasketButton.iconName),
             style: .plain,
             target: self,
             action: #selector(didTapBasketButton)
@@ -111,6 +131,11 @@ class ProductDetailViewController: UIViewController {
         Task {
             await presenter.viewDidLoad()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
     }
     
     @objc
@@ -132,13 +157,11 @@ class ProductDetailViewController: UIViewController {
 // MARK: - ProductDetailViewInterface
 extension ProductDetailViewController: ProductDetailViewInterface {
     func prepareUI() {
-        navigationItem.rightBarButtonItem = bagBarButton
-        
         view.addSubview(scrollView)
         scrollView.addSubview(containerView)
         view.addSubview(addToBasketButton)
         
-        containerView.addArrangedSubview(imageView)
+        containerView.addArrangedSubview(imageSliderContainerView)
         containerView.addArrangedSubview(productNameLabel)
         containerView.addArrangedSubview(sizeSelectionContainerView)
         containerView.addArrangedSubview(priceLabel)
@@ -162,14 +185,13 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         addToBasketButton.set(
             .bottomOf(view, 32),
             .trailingOf(view, 16),
-            .width(40),
-            .height(40)
+            .width(Constants.AddToBasketButton.width),
+            .height(Constants.AddToBasketButton.height)
         )
     }
     
-    func setImageView(imageUrl: String) {
-        imageView.loadImage(from: imageUrl)
-        imageView.isHidden = false
+    func prepareNavigationBar() {
+        navigationItem.rightBarButtonItem = bagBarButton
     }
     
     func setProductNameLabel(text: String) {
@@ -193,14 +215,20 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         return productDetailSizeSelectionModule
     }
     
+    func prepareProductDetailImageSliderView(arguments: ProductDetailImageSliderArguments) -> ProductDetailImageSliderModule {
+        let (productDetailImageSliderView, productDetailImageSliderModule) = ProductDetailImageSliderRouter.createModule(arguments: arguments)
+        embed(productDetailImageSliderView, in: imageSliderContainerView)
+        return productDetailImageSliderModule
+    }
+    
     func updateAddToBasketButton(for state: AddToBasketButtonState) {
         switch state {
         case .addable:
-            addToBasketButton.setTitle("+", for: .normal)
-            addToBasketButton.backgroundColor = .systemGreen
+            addToBasketButton.setTitle(Constants.AddToBasketButton.Addable.buttonTitle, for: .normal)
+            addToBasketButton.backgroundColor = Constants.AddToBasketButton.Addable.backgroundColor
         case .unaddable:
-            addToBasketButton.setTitle("-", for: .normal)
-            addToBasketButton.backgroundColor = .systemRed
+            addToBasketButton.setTitle(Constants.AddToBasketButton.Unaddable.buttonTitle, for: .normal)
+            addToBasketButton.backgroundColor = Constants.AddToBasketButton.Unaddable.backgroundColor
         }
     }
 }

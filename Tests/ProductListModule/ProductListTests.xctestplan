@@ -20,8 +20,8 @@
     {
       "target" : {
         "containerPath" : "container:OunassCase.xcodeproj",
-        "identifier" : "457776AD27CE879A9CF3338F",
-        "name" : "ProductListTests"
+        "identifier" : "3473BE5A97E9AF5AC4AF1B29",
+        "name" : "ProductListModuleTests"
       }
     }
   ],

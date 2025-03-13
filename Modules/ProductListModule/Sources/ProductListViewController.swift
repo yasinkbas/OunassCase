@@ -26,6 +26,12 @@ private extension ProductListViewController {
 
         }
         
+        enum EmptyView {
+            static let message: String = "There is an error loading products"
+            static let titleColor: UIColor = .black
+            static let fontSize: CGFloat = 18
+        }
+        
         static let pageName: String = "Product List"
     }
 }
@@ -41,7 +47,7 @@ final class ProductListViewController: UIViewController {
         layout.sectionInset = Constants.CollectionView.sectionInset
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(cellType: ProductCell.self, bundle: .main)
+        collectionView.register(cellType: ProductCell.self)
         collectionView.refreshControl = refreshControl
         collectionView.verboseName = "collectionView"
         collectionView.accessibilityIdentifier = "collectionView"
@@ -80,7 +86,11 @@ final class ProductListViewController: UIViewController {
 // MARK: - ProductListViewInterface
 extension ProductListViewController: ProductListViewInterface {
     var emptyViewArguments: CommonViewKit.EmptyViewPresenterArguments {
-        .init(message: "There is an error loading products", titleColor: .black, titleFontSize: 18)
+        .init(
+            message: Constants.EmptyView.message,
+            titleColor: Constants.EmptyView.titleColor,
+            titleFontSize: Constants.EmptyView.fontSize
+        )
     }
     
     func prepareUI() {

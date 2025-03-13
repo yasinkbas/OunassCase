@@ -20,6 +20,7 @@ private extension ProductCell {
             static let spacing: CGFloat = 8
         }
         
+        static let backgroundColor: UIColor = .white
         static let cornerRadius: CGFloat = 8
         static let borderWidth: CGFloat = 1
         static let borderColor: UIColor = UIColor.lightGray
@@ -56,23 +57,35 @@ final class ProductCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupAppearance()
         setupUI()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    private func setupUI() {
-        contentView.backgroundColor = .white
+    
+    private func setupAppearance() {
+        contentView.backgroundColor = Constants.backgroundColor
         contentView.layer.cornerRadius = Constants.cornerRadius
         contentView.layer.borderWidth = Constants.borderWidth
         contentView.layer.borderColor = Constants.borderColor.cgColor
         contentView.layer.masksToBounds = true
-        
+    }
+
+    private func setupUI() {
         contentView.addSubview(containerView)
-        containerView.set(.topOf(contentView, 8), .leadingOf(contentView, 8), .trailingOf(contentView, 8), .bottomOf(contentView, 8))
-        imageView.set(.height(200), .width(150))
+        
+        containerView.set(
+            .topOf(contentView, 8),
+            .leadingOf(contentView, 8),
+            .trailingOf(contentView, 8),
+            .bottomOf(contentView, 8)
+        )
+        imageView.set(
+            .height(200),
+            .width(150)
+        )
     }
 
     func configure(with arguments: ProductCellArguments) {

@@ -10,9 +10,6 @@ import NetworkManagerKit
 
 final class ProductListEndpoint {
     let client = NetworkClientHandler.client()
-    
-    init() { }
-    
 
     func getList(for startIndex: String?) -> NLTaskDirector<ProductListBaseAPIResponse<ProductListResponse>, Empty> {
         NLTaskPoint(client: client)

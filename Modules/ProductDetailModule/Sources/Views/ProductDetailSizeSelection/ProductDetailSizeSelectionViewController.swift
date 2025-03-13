@@ -15,17 +15,29 @@ protocol ProductDetailSizeSelectionViewInterface: AnyObject {
     func selectItem(at indexPath: IndexPath)
 }
 
-class ProductDetailSizeSelectionViewController: UIViewController {
+private extension ProductDetailSizeSelectionViewController {
+    enum Constants {
+        enum CollectionView {
+            static let minimumInteritemSpacing: CGFloat = 8
+            static let minimumLineSpacing: CGFloat = 8
+            static let itemHeight: CGFloat = 32
+            static let itemHorizontalSpacing: CGFloat = 20
+        }
+    }
+}
+
+final class ProductDetailSizeSelectionViewController: UIViewController {
     var presenter: ProductDetailSizeSelectionPresenterInterface!
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 8
-        layout.minimumLineSpacing = 8
+        layout.minimumInteritemSpacing = Constants.CollectionView.minimumInteritemSpacing
+        layout.minimumLineSpacing = Constants.CollectionView.minimumLineSpacing
+        
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.register(cellType: ProductDetailSizeCell.self, bundle: .main)
+        collectionView.register(cellType: ProductDetailSizeCell.self)
         collectionView.dataSource = self
         collectionView.delegate = self
         return collectionView
@@ -46,7 +58,7 @@ extension ProductDetailSizeSelectionViewController: ProductDetailSizeSelectionVi
             .leadingOf(view),
             .trailingOf(view),
             .bottomOf(view),
-            .height(44)
+            .height(Constants.CollectionView.itemHeight)
         )
     }
     
@@ -81,9 +93,8 @@ extension ProductDetailSizeSelectionViewController: UICollectionViewDelegateFlow
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // TODO: move to presenter
         let labelWidth = presenter.size(at: indexPath).size(withAttributes: [.font: UIFont.systemFont(ofSize: 16)]).width
-        return CGSize(width: labelWidth + 20, height: 32)
+        return CGSize(width: labelWidth + Constants.CollectionView.itemHorizontalSpacing, height: Constants.CollectionView.itemHeight)
     }
 }
 

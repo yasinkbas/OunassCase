@@ -7,7 +7,6 @@
 
 import UIKit
 import UILab
-import CommonKit
 
 public protocol LoadingViewInterface: AnyObject {
     func prepareUI()

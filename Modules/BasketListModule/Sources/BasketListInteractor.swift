@@ -7,19 +7,12 @@
 
 import Foundation
 
-protocol BasketListInteractorInterface: AnyObject {
-
-}
-
-protocol BasketListInteractorOutput: AnyObject {
-    
-}
+protocol BasketListInteractorInterface: AnyObject {}
+protocol BasketListInteractorOutput: AnyObject {}
 
 final class BasketListInteractor {
     weak var output: BasketListInteractorOutput?
 }
 
 // MARK: - BasketListInteractorInterface
-extension BasketListInteractor: BasketListInteractorInterface { 
-
-}
+extension BasketListInteractor: BasketListInteractorInterface {}

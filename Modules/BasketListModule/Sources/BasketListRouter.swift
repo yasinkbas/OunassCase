@@ -32,7 +32,5 @@ final class BasketListRouter {
 }
 
 // MARK: - BasketListRouterInterface
-extension BasketListRouter: BasketListRouterInterface { 
-    
-}
+extension BasketListRouter: BasketListRouterInterface {}
 

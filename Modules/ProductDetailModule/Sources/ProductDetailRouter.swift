@@ -38,14 +38,11 @@ final class ProductDetailRouter {
         navigationController.pushViewController(basketListController, animated: true)
     }
     
-    
     func dismiss() {
         navigationController?.dismiss(animated: true)
     }
 }
 
 // MARK: - ProductDetailRouterInterface
-extension ProductDetailRouter: ProductDetailRouterInterface { 
-    
-}
+extension ProductDetailRouter: ProductDetailRouterInterface {}
 

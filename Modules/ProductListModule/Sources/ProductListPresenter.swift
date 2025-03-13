@@ -27,7 +27,7 @@ private extension ProductListPresenter {
     }
 }
 
-final class ProductListPresenter: @unchecked Sendable {
+final class ProductListPresenter {
     private weak var view: ProductListViewInterface?
     private let router: ProductListRouterInterface
     private let interactor: ProductListInteractorInterface
@@ -56,8 +56,7 @@ final class ProductListPresenter: @unchecked Sendable {
     private func fetchProducts(for pageHref: String?) async {
         var startIndex: Int = .zero
         if let pageHref {
-            let components = URLComponents(string: pageHref)
-            startIndex = Int(components?.queryItems?.first(where: { $0.name == "fh_start_index" })?.value ?? "0") ?? .zero // TODO: think about moving into interactor
+            startIndex = interactor.getStartIndex(for: pageHref)
         }
         view?.showLoading()
         let data = await interactor.fetchProducts(for: startIndex)
